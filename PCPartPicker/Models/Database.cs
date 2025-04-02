@@ -16,7 +16,13 @@ public class Database
     public static void LoadDatabase()
     {
 
-        //pathToFiles = Application.dataPath.Substring(0, Application.dataPath.LastIndexOf("/")) + "/Files/";
+        PathToFiles = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "PC-Part-Picker"); //Store in documents/PC-Part-Picker
+
+        if (!Directory.Exists(PathToFiles)) //Directory created if non-existing path is present
+        {
+            Directory.CreateDirectory(PathToFiles);
+        }
+
 
         if (PartsList == null)
         {

@@ -44,31 +44,31 @@
             this.CPUSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPUSelect.Location = new System.Drawing.Point(918, 191);
             this.CPUSelect.Name = "CPUSelect";
-            this.CPUSelect.Size = new System.Drawing.Size(309, 63);
+            this.CPUSelect.Size = new System.Drawing.Size(424, 63);
             this.CPUSelect.TabIndex = 0;
-            this.CPUSelect.Text = "Choose CPU";
+            this.CPUSelect.Text = "Select CPU";
             this.CPUSelect.UseVisualStyleBackColor = true;
             this.CPUSelect.Click += new System.EventHandler(this.button1_Click);
             // 
             // MBSelect
             // 
             this.MBSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MBSelect.Location = new System.Drawing.Point(114, 611);
+            this.MBSelect.Location = new System.Drawing.Point(114, 587);
             this.MBSelect.Name = "MBSelect";
             this.MBSelect.Size = new System.Drawing.Size(419, 63);
             this.MBSelect.TabIndex = 1;
-            this.MBSelect.Text = "Choose Motherboard";
+            this.MBSelect.Text = "Select Motherboard";
             this.MBSelect.UseVisualStyleBackColor = true;
             this.MBSelect.Click += new System.EventHandler(this.MBSelect_Click);
             // 
             // GPUSelect
             // 
             this.GPUSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GPUSelect.Location = new System.Drawing.Point(224, 191);
+            this.GPUSelect.Location = new System.Drawing.Point(114, 191);
             this.GPUSelect.Name = "GPUSelect";
-            this.GPUSelect.Size = new System.Drawing.Size(309, 63);
+            this.GPUSelect.Size = new System.Drawing.Size(424, 63);
             this.GPUSelect.TabIndex = 2;
-            this.GPUSelect.Text = "Choose GPU";
+            this.GPUSelect.Text = "Select GPU";
             this.GPUSelect.UseVisualStyleBackColor = true;
             this.GPUSelect.Click += new System.EventHandler(this.GPUSelect_Click);
             // 
@@ -88,9 +88,9 @@
             this.ramSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ramSelect.Location = new System.Drawing.Point(918, 587);
             this.ramSelect.Name = "ramSelect";
-            this.ramSelect.Size = new System.Drawing.Size(309, 63);
+            this.ramSelect.Size = new System.Drawing.Size(424, 63);
             this.ramSelect.TabIndex = 4;
-            this.ramSelect.Text = "Choose RAM";
+            this.ramSelect.Text = "Select RAM";
             this.ramSelect.UseVisualStyleBackColor = true;
             this.ramSelect.Click += new System.EventHandler(this.button1_Click_2);
             // 
@@ -98,9 +98,9 @@
             // 
             this.gpuList.FormattingEnabled = true;
             this.gpuList.ItemHeight = 29;
-            this.gpuList.Location = new System.Drawing.Point(224, 273);
+            this.gpuList.Location = new System.Drawing.Point(114, 273);
             this.gpuList.Name = "gpuList";
-            this.gpuList.Size = new System.Drawing.Size(314, 178);
+            this.gpuList.Size = new System.Drawing.Size(424, 178);
             this.gpuList.TabIndex = 5;
             // 
             // cpuList
@@ -109,7 +109,7 @@
             this.cpuList.ItemHeight = 29;
             this.cpuList.Location = new System.Drawing.Point(918, 273);
             this.cpuList.Name = "cpuList";
-            this.cpuList.Size = new System.Drawing.Size(309, 178);
+            this.cpuList.Size = new System.Drawing.Size(424, 178);
             this.cpuList.TabIndex = 6;
             // 
             // ramList
@@ -118,16 +118,16 @@
             this.ramList.ItemHeight = 29;
             this.ramList.Location = new System.Drawing.Point(918, 669);
             this.ramList.Name = "ramList";
-            this.ramList.Size = new System.Drawing.Size(309, 178);
+            this.ramList.Size = new System.Drawing.Size(424, 178);
             this.ramList.TabIndex = 7;
             // 
             // motherboardList
             // 
             this.motherboardList.FormattingEnabled = true;
             this.motherboardList.ItemHeight = 29;
-            this.motherboardList.Location = new System.Drawing.Point(114, 695);
+            this.motherboardList.Location = new System.Drawing.Point(114, 669);
             this.motherboardList.Name = "motherboardList";
-            this.motherboardList.Size = new System.Drawing.Size(419, 149);
+            this.motherboardList.Size = new System.Drawing.Size(419, 178);
             this.motherboardList.TabIndex = 8;
             // 
             // PCBuildScreen
