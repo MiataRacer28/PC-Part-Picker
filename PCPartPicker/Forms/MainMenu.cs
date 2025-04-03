@@ -15,6 +15,7 @@ namespace PCPartPicker
         public MainMenu()
         {
             InitializeComponent();
+            Database.LoadDatabase();
         }
 
         private void PartsDatabase_Click(object sender, EventArgs e)

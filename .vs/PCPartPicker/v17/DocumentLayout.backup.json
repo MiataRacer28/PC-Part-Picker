@@ -3,19 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\pcbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\pcbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PCPartPicker||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\completedbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\completedbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\completedbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\completedbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\models\\completedbuild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\models\\completedbuild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|c:\\users\\littl\\onedrive\\documents\\visual studio projects\\pcpartpicker\\pcpartpicker\\forms\\pcbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\pcbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PCPartPicker||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\addmotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,10 +42,6 @@
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\addcpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\models\\completedbuild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\models\\completedbuild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\parttoadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\parttoadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -38,20 +50,8 @@
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\parttoadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|c:\\users\\littl\\onedrive\\documents\\visual studio projects\\pcpartpicker\\pcpartpicker\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\databasescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\databasescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\completedbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\completedbuildscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\databasescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -116,11 +116,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "PCPartPicker",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\PCPartPicker.csproj",
               "RelativeDocumentMoniker": "PCPartPicker\\PCPartPicker.csproj",
@@ -178,15 +178,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "PartToAdd.cs [Design]",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\PartToAdd.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\PartToAdd.cs",
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\PartToAdd.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\PartToAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:44:17.877Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-31T17:44:17.877Z"
             },
             {
               "$type": "Document",
@@ -198,20 +197,18 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\AddCPU.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAArwBMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:37:59.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:37:59.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "AddCPU.cs [Design]",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\AddCPU.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\AddCPU.cs",
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\AddCPU.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\AddCPU.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:30:04.933Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-31T17:30:04.933Z"
             },
             {
               "$type": "Document",
@@ -223,24 +220,22 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\AddMotherboard.cs",
               "ViewState": "AgIAABoAAAAAAAAAAADgvysAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:07:51.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:07:51.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "AddMotherboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\AddMotherboard.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\AddMotherboard.cs",
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\AddMotherboard.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\AddMotherboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:07:49.514Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-31T17:07:49.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "PartToAdd.cs",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\PartToAdd.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\PartToAdd.cs",
@@ -248,12 +243,11 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\PartToAdd.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:55:12.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T16:55:12.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "DatabaseScreen.cs",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\DatabaseScreen.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\DatabaseScreen.cs",
@@ -265,20 +259,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "CompletedBuildScreen.cs",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\CompletedBuildScreen.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\CompletedBuildScreen.cs",
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\CompletedBuildScreen.cs",
               "RelativeToolTip": "PCPartPicker\\Forms\\CompletedBuildScreen.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxsAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T18:07:43.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CompletedBuildScreen.cs [Design]",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\CompletedBuildScreen.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\CompletedBuildScreen.cs",
@@ -290,20 +284,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\MainMenu.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\MainMenu.cs",
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\MainMenu.cs",
               "RelativeToolTip": "PCPartPicker\\Forms\\MainMenu.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA0wCsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T18:58:21.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "CompletedBuild.cs",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Models\\CompletedBuild.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Models\\CompletedBuild.cs",
@@ -316,13 +310,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Models\\Database.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Models\\Database.cs",
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Models\\Database.cs",
               "RelativeToolTip": "PCPartPicker\\Models\\Database.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T21:42:10.467Z",
               "EditorCaption": ""
@@ -412,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "PCBuildScreen.cs [Design]",
               "DocumentMoniker": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\PCBuildScreen.cs",
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\PCBuildScreen.cs",
@@ -432,8 +426,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\PCBuildScreen.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwCEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T14:30:36.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T14:30:36.753Z"
             }
           ]
         }

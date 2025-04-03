@@ -28,8 +28,6 @@ public class Database
         {
             PartsList = new List<Component>();
         }
-        
-
 
         ReadParts(); //Method will read files from database text file and add them to the database
     }
@@ -42,6 +40,7 @@ public class Database
 
     public static void ReadParts()
     {
+        PartsList.Clear();
         try
         {
             string filePath = Path.Combine(PathToFiles, "components.txt"); //Combine method will handle OS specific file structure syntax
