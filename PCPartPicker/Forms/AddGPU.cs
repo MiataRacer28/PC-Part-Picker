@@ -73,8 +73,6 @@ namespace PCPartPicker.Forms
         {
             try
             {
-
-
                 string name = (string)(gpuNameEntry.Text);
                 string manufacturer = (string)(gpuManufacturerEntry.Text);
                 int performanceScore = int.Parse(pfScoreEntry.Text);
@@ -90,6 +88,10 @@ namespace PCPartPicker.Forms
 
                 GPU gpuAddition = new GPU(name, manufacturer, performanceScore, coreCount, baseClock, maxClock, gpuArch, VRAM, memType, maxTDP, hasRaytracing, recentGraphicsAPI);
                 Database.UpdateDatabase(gpuAddition);
+
+                MainMenu mainMenu = new MainMenu(); //Main menu form
+                mainMenu.Show(); //show main menu
+                this.Hide(); //hide database screen
             }
 
             catch (Exception ex)
@@ -99,6 +101,8 @@ namespace PCPartPicker.Forms
                 this.Hide();
                 errorScreen.Show();
             }
+
+
         }
 
         private void gpuNameEntry_TextChanged(object sender, EventArgs e)

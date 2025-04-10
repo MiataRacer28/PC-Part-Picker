@@ -42,22 +42,27 @@
             this.eccEntry = new System.Windows.Forms.TextBox();
             this.mainMenu = new System.Windows.Forms.Button();
             this.submit = new System.Windows.Forms.Button();
+            this.pfScoreEntry = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ramManufacturerEntry = new System.Windows.Forms.TextBox();
+            this.Manufacturer = new System.Windows.Forms.TextBox();
+            this.ramNameEntry = new System.Windows.Forms.TextBox();
+            this.Name = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // capacityEntry
             // 
             this.capacityEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.capacityEntry.Location = new System.Drawing.Point(528, 87);
+            this.capacityEntry.Location = new System.Drawing.Point(528, 285);
             this.capacityEntry.Name = "capacityEntry";
             this.capacityEntry.Size = new System.Drawing.Size(340, 55);
             this.capacityEntry.TabIndex = 29;
-            this.capacityEntry.Text = "Enter Text";
             this.capacityEntry.TextChanged += new System.EventHandler(this.capacityEntry_TextChanged);
             // 
             // capacity
             // 
             this.capacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.capacity.Location = new System.Drawing.Point(42, 87);
+            this.capacity.Location = new System.Drawing.Point(42, 285);
             this.capacity.Name = "capacity";
             this.capacity.ReadOnly = true;
             this.capacity.Size = new System.Drawing.Size(404, 55);
@@ -67,7 +72,7 @@
             // memoryType
             // 
             this.memoryType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memoryType.Location = new System.Drawing.Point(42, 179);
+            this.memoryType.Location = new System.Drawing.Point(42, 377);
             this.memoryType.Name = "memoryType";
             this.memoryType.ReadOnly = true;
             this.memoryType.Size = new System.Drawing.Size(404, 55);
@@ -77,7 +82,7 @@
             // memFreq
             // 
             this.memFreq.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memFreq.Location = new System.Drawing.Point(42, 271);
+            this.memFreq.Location = new System.Drawing.Point(42, 469);
             this.memFreq.Name = "memFreq";
             this.memFreq.ReadOnly = true;
             this.memFreq.Size = new System.Drawing.Size(404, 55);
@@ -87,7 +92,7 @@
             // latency
             // 
             this.latency.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.latency.Location = new System.Drawing.Point(42, 367);
+            this.latency.Location = new System.Drawing.Point(42, 565);
             this.latency.Name = "latency";
             this.latency.ReadOnly = true;
             this.latency.Size = new System.Drawing.Size(404, 55);
@@ -97,7 +102,7 @@
             // voltage
             // 
             this.voltage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voltage.Location = new System.Drawing.Point(42, 463);
+            this.voltage.Location = new System.Drawing.Point(42, 661);
             this.voltage.Name = "voltage";
             this.voltage.ReadOnly = true;
             this.voltage.Size = new System.Drawing.Size(404, 55);
@@ -107,7 +112,7 @@
             // errorCorrecting
             // 
             this.errorCorrecting.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorCorrecting.Location = new System.Drawing.Point(42, 565);
+            this.errorCorrecting.Location = new System.Drawing.Point(42, 763);
             this.errorCorrecting.Name = "errorCorrecting";
             this.errorCorrecting.ReadOnly = true;
             this.errorCorrecting.Size = new System.Drawing.Size(404, 55);
@@ -117,47 +122,43 @@
             // memTypeEntry
             // 
             this.memTypeEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memTypeEntry.Location = new System.Drawing.Point(528, 179);
+            this.memTypeEntry.Location = new System.Drawing.Point(528, 377);
             this.memTypeEntry.Name = "memTypeEntry";
             this.memTypeEntry.Size = new System.Drawing.Size(340, 55);
             this.memTypeEntry.TabIndex = 35;
-            this.memTypeEntry.Text = "Enter Text";
             // 
             // memFreqEntry
             // 
             this.memFreqEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memFreqEntry.Location = new System.Drawing.Point(528, 271);
+            this.memFreqEntry.Location = new System.Drawing.Point(528, 469);
             this.memFreqEntry.Name = "memFreqEntry";
             this.memFreqEntry.Size = new System.Drawing.Size(340, 55);
             this.memFreqEntry.TabIndex = 36;
-            this.memFreqEntry.Text = "Enter Text";
             // 
             // latencyEntry
             // 
             this.latencyEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.latencyEntry.Location = new System.Drawing.Point(528, 367);
+            this.latencyEntry.Location = new System.Drawing.Point(528, 565);
             this.latencyEntry.Name = "latencyEntry";
             this.latencyEntry.Size = new System.Drawing.Size(340, 55);
             this.latencyEntry.TabIndex = 37;
-            this.latencyEntry.Text = "Enter Text";
             // 
             // voltageEntry
             // 
             this.voltageEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voltageEntry.Location = new System.Drawing.Point(528, 463);
+            this.voltageEntry.Location = new System.Drawing.Point(528, 661);
             this.voltageEntry.Name = "voltageEntry";
             this.voltageEntry.Size = new System.Drawing.Size(340, 55);
             this.voltageEntry.TabIndex = 38;
-            this.voltageEntry.Text = "Enter Text";
             // 
             // eccEntry
             // 
             this.eccEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eccEntry.Location = new System.Drawing.Point(528, 565);
+            this.eccEntry.Location = new System.Drawing.Point(528, 763);
             this.eccEntry.Name = "eccEntry";
             this.eccEntry.Size = new System.Drawing.Size(340, 55);
             this.eccEntry.TabIndex = 39;
-            this.eccEntry.Text = "Enter Yes / No";
+            this.eccEntry.Text = "Enter True / False";
             // 
             // mainMenu
             // 
@@ -180,12 +181,72 @@
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = true;
             // 
+            // pfScoreEntry
+            // 
+            this.pfScoreEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfScoreEntry.Location = new System.Drawing.Point(528, 198);
+            this.pfScoreEntry.Name = "pfScoreEntry";
+            this.pfScoreEntry.Size = new System.Drawing.Size(340, 55);
+            this.pfScoreEntry.TabIndex = 49;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(42, 198);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(404, 55);
+            this.textBox2.TabIndex = 48;
+            this.textBox2.Text = "Enter PF Score";
+            // 
+            // ramManufacturerEntry
+            // 
+            this.ramManufacturerEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ramManufacturerEntry.Location = new System.Drawing.Point(528, 113);
+            this.ramManufacturerEntry.Name = "ramManufacturerEntry";
+            this.ramManufacturerEntry.Size = new System.Drawing.Size(340, 55);
+            this.ramManufacturerEntry.TabIndex = 47;
+            // 
+            // Manufacturer
+            // 
+            this.Manufacturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Manufacturer.Location = new System.Drawing.Point(42, 113);
+            this.Manufacturer.Name = "Manufacturer";
+            this.Manufacturer.ReadOnly = true;
+            this.Manufacturer.Size = new System.Drawing.Size(404, 55);
+            this.Manufacturer.TabIndex = 46;
+            this.Manufacturer.Text = "Enter Manufacturer:";
+            // 
+            // ramNameEntry
+            // 
+            this.ramNameEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ramNameEntry.Location = new System.Drawing.Point(528, 32);
+            this.ramNameEntry.Name = "ramNameEntry";
+            this.ramNameEntry.Size = new System.Drawing.Size(340, 55);
+            this.ramNameEntry.TabIndex = 45;
+            // 
+            // Name
+            // 
+            this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name.Location = new System.Drawing.Point(42, 32);
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            this.Name.Size = new System.Drawing.Size(404, 55);
+            this.Name.TabIndex = 44;
+            this.Name.Text = "Enter RAM Name:";
+            // 
             // AddRAM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(912, 1004);
+            this.Controls.Add(this.pfScoreEntry);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ramManufacturerEntry);
+            this.Controls.Add(this.Manufacturer);
+            this.Controls.Add(this.ramNameEntry);
+            this.Controls.Add(this.Name);
             this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.eccEntry);
@@ -223,5 +284,11 @@
         private System.Windows.Forms.TextBox eccEntry;
         private System.Windows.Forms.Button mainMenu;
         private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.TextBox pfScoreEntry;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox ramManufacturerEntry;
+        private System.Windows.Forms.TextBox Manufacturer;
+        private System.Windows.Forms.TextBox ramNameEntry;
+        private System.Windows.Forms.TextBox Name;
     }
 }
