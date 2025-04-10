@@ -82,6 +82,12 @@
     <Compile Include="Forms\DatabaseScreen.Designer.cs">
       <DependentUpon>DatabaseScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ErrorScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ErrorScreen.Designer.cs">
+      <DependentUpon>ErrorScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DatabaseScreen.resx">
       <DependentUpon>DatabaseScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorScreen.resx">
+      <DependentUpon>ErrorScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

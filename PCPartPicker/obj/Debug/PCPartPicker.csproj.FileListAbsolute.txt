@@ -16,3 +16,4 @@ C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPick
 C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPicker\obj\Debug\PCPartPicker.Forms.AddCPU.resources
 C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPicker\obj\Debug\PCPartPicker.Forms.AddGPU.resources
 C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPicker\obj\Debug\PCPartPicker.Forms.AddRAM.resources
+C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPicker\obj\Debug\PCPartPicker.Forms.ErrorScreen.resources
