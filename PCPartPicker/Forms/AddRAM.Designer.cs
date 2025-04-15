@@ -47,7 +47,7 @@
             this.ramManufacturerEntry = new System.Windows.Forms.TextBox();
             this.Manufacturer = new System.Windows.Forms.TextBox();
             this.ramNameEntry = new System.Windows.Forms.TextBox();
-            this.Name = new System.Windows.Forms.TextBox();
+            this.ramName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // capacityEntry
@@ -180,6 +180,7 @@
             this.submit.TabIndex = 40;
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // pfScoreEntry
             // 
@@ -225,15 +226,15 @@
             this.ramNameEntry.Size = new System.Drawing.Size(340, 55);
             this.ramNameEntry.TabIndex = 45;
             // 
-            // Name
+            // ramName
             // 
-            this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(42, 32);
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            this.Name.Size = new System.Drawing.Size(404, 55);
-            this.Name.TabIndex = 44;
-            this.Name.Text = "Enter RAM Name:";
+            this.ramName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ramName.Location = new System.Drawing.Point(42, 32);
+            this.ramName.Name = "ramName";
+            this.ramName.ReadOnly = true;
+            this.ramName.Size = new System.Drawing.Size(404, 55);
+            this.ramName.TabIndex = 44;
+            this.ramName.Text = "Enter Name: ";
             // 
             // AddRAM
             // 
@@ -246,7 +247,7 @@
             this.Controls.Add(this.ramManufacturerEntry);
             this.Controls.Add(this.Manufacturer);
             this.Controls.Add(this.ramNameEntry);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.ramName);
             this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.eccEntry);
@@ -289,6 +290,6 @@
         private System.Windows.Forms.TextBox ramManufacturerEntry;
         private System.Windows.Forms.TextBox Manufacturer;
         private System.Windows.Forms.TextBox ramNameEntry;
-        private System.Windows.Forms.TextBox Name;
+        private System.Windows.Forms.TextBox ramName;
     }
 }

@@ -28,5 +28,38 @@ namespace PCPartPicker.Forms
             mainMenu.Show(); //show main menu
             this.Hide(); //hide database screen
         }
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string name = (string)(ramNameEntry.Text);
+                string manufacturer = (string)(ramManufacturerEntry.Text);
+                int performanceScore = int.Parse(pfScoreEntry.Text);
+                int capacity = int.Parse(capacityEntry.Text);
+                string memType = (string)(memTypeEntry.Text);
+                int memFrequency = int.Parse(memFreqEntry.Text);
+                string latency = (string)(latencyEntry.Text);
+                string voltage = (string)(voltageEntry.Text);
+                bool errorCorrecting = bool.Parse(eccEntry.Text);
+
+                RAM ramAddition = new RAM(name, manufacturer, performanceScore, capacity, memType, memFrequency, latency, voltage, errorCorrecting);
+                Database.UpdateDatabase(ramAddition);
+
+                MainMenu mainMenu = new MainMenu(); //Main menu form
+                mainMenu.Show(); //show main menu
+                this.Hide(); //hide database screen
+            }
+
+            catch (Exception ex)
+            {
+                ErrorScreen errorScreen = new ErrorScreen();
+                errorScreen.ShowErrorMessage(ex.Message);
+                this.Hide();
+                errorScreen.Show();
+            }
+
+
+        }
     }
 }

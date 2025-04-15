@@ -42,12 +42,18 @@
             this.cpuArchEntry = new System.Windows.Forms.TextBox();
             this.intGpuEntry = new System.Windows.Forms.TextBox();
             this.socketEntry = new System.Windows.Forms.TextBox();
+            this.pfScoreEntry = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cpuManufacturerEntry = new System.Windows.Forms.TextBox();
+            this.Manufacturer = new System.Windows.Forms.TextBox();
+            this.cpuNameEntry = new System.Windows.Forms.TextBox();
+            this.ramName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // CoreCount
             // 
             this.CoreCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoreCount.Location = new System.Drawing.Point(23, 68);
+            this.CoreCount.Location = new System.Drawing.Point(21, 308);
             this.CoreCount.Name = "CoreCount";
             this.CoreCount.ReadOnly = true;
             this.CoreCount.Size = new System.Drawing.Size(404, 55);
@@ -57,7 +63,7 @@
             // clockFrequency
             // 
             this.clockFrequency.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockFrequency.Location = new System.Drawing.Point(23, 160);
+            this.clockFrequency.Location = new System.Drawing.Point(21, 400);
             this.clockFrequency.Name = "clockFrequency";
             this.clockFrequency.ReadOnly = true;
             this.clockFrequency.Size = new System.Drawing.Size(404, 55);
@@ -67,7 +73,7 @@
             // maxTDP
             // 
             this.maxTDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxTDP.Location = new System.Drawing.Point(23, 252);
+            this.maxTDP.Location = new System.Drawing.Point(21, 492);
             this.maxTDP.Name = "maxTDP";
             this.maxTDP.ReadOnly = true;
             this.maxTDP.Size = new System.Drawing.Size(404, 55);
@@ -77,7 +83,7 @@
             // architecture
             // 
             this.architecture.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.architecture.Location = new System.Drawing.Point(23, 344);
+            this.architecture.Location = new System.Drawing.Point(21, 584);
             this.architecture.Name = "architecture";
             this.architecture.ReadOnly = true;
             this.architecture.Size = new System.Drawing.Size(404, 55);
@@ -87,7 +93,7 @@
             // integratedGPU
             // 
             this.integratedGPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.integratedGPU.Location = new System.Drawing.Point(23, 436);
+            this.integratedGPU.Location = new System.Drawing.Point(21, 676);
             this.integratedGPU.Name = "integratedGPU";
             this.integratedGPU.ReadOnly = true;
             this.integratedGPU.Size = new System.Drawing.Size(404, 55);
@@ -97,7 +103,7 @@
             // socket
             // 
             this.socket.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.socket.Location = new System.Drawing.Point(23, 538);
+            this.socket.Location = new System.Drawing.Point(21, 778);
             this.socket.Name = "socket";
             this.socket.ReadOnly = true;
             this.socket.Size = new System.Drawing.Size(404, 55);
@@ -107,17 +113,18 @@
             // submit
             // 
             this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submit.Location = new System.Drawing.Point(545, 854);
+            this.submit.Location = new System.Drawing.Point(543, 902);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(281, 62);
             this.submit.TabIndex = 24;
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // mainMenu
             // 
             this.mainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMenu.Location = new System.Drawing.Point(146, 854);
+            this.mainMenu.Location = new System.Drawing.Point(144, 902);
             this.mainMenu.Name = "mainMenu";
             this.mainMenu.Size = new System.Drawing.Size(281, 62);
             this.mainMenu.TabIndex = 25;
@@ -128,56 +135,105 @@
             // coreCountEntry
             // 
             this.coreCountEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.coreCountEntry.Location = new System.Drawing.Point(545, 68);
+            this.coreCountEntry.Location = new System.Drawing.Point(543, 308);
             this.coreCountEntry.Name = "coreCountEntry";
             this.coreCountEntry.Size = new System.Drawing.Size(340, 55);
             this.coreCountEntry.TabIndex = 26;
-            this.coreCountEntry.Text = "Enter Text";
             // 
             // clockFreqEntry
             // 
             this.clockFreqEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clockFreqEntry.Location = new System.Drawing.Point(545, 160);
+            this.clockFreqEntry.Location = new System.Drawing.Point(543, 400);
             this.clockFreqEntry.Name = "clockFreqEntry";
             this.clockFreqEntry.Size = new System.Drawing.Size(340, 55);
             this.clockFreqEntry.TabIndex = 27;
-            this.clockFreqEntry.Text = "Enter Text";
             // 
             // maxTDPEntry
             // 
             this.maxTDPEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxTDPEntry.Location = new System.Drawing.Point(545, 252);
+            this.maxTDPEntry.Location = new System.Drawing.Point(543, 492);
             this.maxTDPEntry.Name = "maxTDPEntry";
             this.maxTDPEntry.Size = new System.Drawing.Size(340, 55);
             this.maxTDPEntry.TabIndex = 28;
-            this.maxTDPEntry.Text = "Enter Text";
             // 
             // cpuArchEntry
             // 
             this.cpuArchEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cpuArchEntry.Location = new System.Drawing.Point(545, 344);
+            this.cpuArchEntry.Location = new System.Drawing.Point(543, 584);
             this.cpuArchEntry.Name = "cpuArchEntry";
             this.cpuArchEntry.Size = new System.Drawing.Size(340, 55);
             this.cpuArchEntry.TabIndex = 29;
-            this.cpuArchEntry.Text = "Enter Text";
             // 
             // intGpuEntry
             // 
             this.intGpuEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.intGpuEntry.Location = new System.Drawing.Point(545, 436);
+            this.intGpuEntry.Location = new System.Drawing.Point(543, 676);
             this.intGpuEntry.Name = "intGpuEntry";
             this.intGpuEntry.Size = new System.Drawing.Size(340, 55);
             this.intGpuEntry.TabIndex = 30;
-            this.intGpuEntry.Text = "Enter Yes / No";
+            this.intGpuEntry.Text = "Enter True / False";
             // 
             // socketEntry
             // 
             this.socketEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.socketEntry.Location = new System.Drawing.Point(545, 538);
+            this.socketEntry.Location = new System.Drawing.Point(543, 778);
             this.socketEntry.Name = "socketEntry";
             this.socketEntry.Size = new System.Drawing.Size(340, 55);
             this.socketEntry.TabIndex = 31;
-            this.socketEntry.Text = "Enter Text";
+            // 
+            // pfScoreEntry
+            // 
+            this.pfScoreEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfScoreEntry.Location = new System.Drawing.Point(543, 226);
+            this.pfScoreEntry.Name = "pfScoreEntry";
+            this.pfScoreEntry.Size = new System.Drawing.Size(340, 55);
+            this.pfScoreEntry.TabIndex = 55;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(21, 226);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(404, 55);
+            this.textBox2.TabIndex = 54;
+            this.textBox2.Text = "Enter PF Score";
+            // 
+            // cpuManufacturerEntry
+            // 
+            this.cpuManufacturerEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpuManufacturerEntry.Location = new System.Drawing.Point(543, 141);
+            this.cpuManufacturerEntry.Name = "cpuManufacturerEntry";
+            this.cpuManufacturerEntry.Size = new System.Drawing.Size(340, 55);
+            this.cpuManufacturerEntry.TabIndex = 53;
+            // 
+            // Manufacturer
+            // 
+            this.Manufacturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Manufacturer.Location = new System.Drawing.Point(21, 141);
+            this.Manufacturer.Name = "Manufacturer";
+            this.Manufacturer.ReadOnly = true;
+            this.Manufacturer.Size = new System.Drawing.Size(404, 55);
+            this.Manufacturer.TabIndex = 52;
+            this.Manufacturer.Text = "Enter Manufacturer:";
+            // 
+            // cpuNameEntry
+            // 
+            this.cpuNameEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpuNameEntry.Location = new System.Drawing.Point(543, 60);
+            this.cpuNameEntry.Name = "cpuNameEntry";
+            this.cpuNameEntry.Size = new System.Drawing.Size(340, 55);
+            this.cpuNameEntry.TabIndex = 51;
+            // 
+            // ramName
+            // 
+            this.ramName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ramName.Location = new System.Drawing.Point(21, 60);
+            this.ramName.Name = "ramName";
+            this.ramName.ReadOnly = true;
+            this.ramName.Size = new System.Drawing.Size(404, 55);
+            this.ramName.TabIndex = 50;
+            this.ramName.Text = "Enter Name: ";
             // 
             // AddCPU
             // 
@@ -185,6 +241,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(912, 1004);
+            this.Controls.Add(this.pfScoreEntry);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.cpuManufacturerEntry);
+            this.Controls.Add(this.Manufacturer);
+            this.Controls.Add(this.cpuNameEntry);
+            this.Controls.Add(this.ramName);
             this.Controls.Add(this.socketEntry);
             this.Controls.Add(this.intGpuEntry);
             this.Controls.Add(this.cpuArchEntry);
@@ -222,5 +284,11 @@
         private System.Windows.Forms.TextBox cpuArchEntry;
         private System.Windows.Forms.TextBox intGpuEntry;
         private System.Windows.Forms.TextBox socketEntry;
+        private System.Windows.Forms.TextBox pfScoreEntry;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox cpuManufacturerEntry;
+        private System.Windows.Forms.TextBox Manufacturer;
+        private System.Windows.Forms.TextBox cpuNameEntry;
+        private System.Windows.Forms.TextBox ramName;
     }
 }

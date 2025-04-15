@@ -52,6 +52,12 @@
             this.maxPCIeSlotTypeEntry = new System.Windows.Forms.TextBox();
             this.PCIeVersionEntry = new System.Windows.Forms.TextBox();
             this.submit = new System.Windows.Forms.Button();
+            this.pfScoreEntry = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.MoboManufacturerEntry = new System.Windows.Forms.TextBox();
+            this.Manufacturer = new System.Windows.Forms.TextBox();
+            this.moboNameEntry = new System.Windows.Forms.TextBox();
+            this.moboName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -63,7 +69,7 @@
             // formFactor
             // 
             this.formFactor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.formFactor.Location = new System.Drawing.Point(34, 30);
+            this.formFactor.Location = new System.Drawing.Point(34, 240);
             this.formFactor.Name = "formFactor";
             this.formFactor.ReadOnly = true;
             this.formFactor.Size = new System.Drawing.Size(404, 55);
@@ -86,7 +92,7 @@
             // Socket
             // 
             this.Socket.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Socket.Location = new System.Drawing.Point(34, 122);
+            this.Socket.Location = new System.Drawing.Point(34, 316);
             this.Socket.Name = "Socket";
             this.Socket.ReadOnly = true;
             this.Socket.Size = new System.Drawing.Size(404, 55);
@@ -97,7 +103,7 @@
             // Chipset
             // 
             this.Chipset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Chipset.Location = new System.Drawing.Point(34, 218);
+            this.Chipset.Location = new System.Drawing.Point(34, 396);
             this.Chipset.Name = "Chipset";
             this.Chipset.ReadOnly = true;
             this.Chipset.Size = new System.Drawing.Size(404, 55);
@@ -107,7 +113,7 @@
             // MemoryType
             // 
             this.MemoryType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MemoryType.Location = new System.Drawing.Point(34, 318);
+            this.MemoryType.Location = new System.Drawing.Point(34, 474);
             this.MemoryType.Name = "MemoryType";
             this.MemoryType.ReadOnly = true;
             this.MemoryType.Size = new System.Drawing.Size(404, 55);
@@ -117,7 +123,7 @@
             // MaxMem
             // 
             this.MaxMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaxMem.Location = new System.Drawing.Point(34, 420);
+            this.MaxMem.Location = new System.Drawing.Point(34, 554);
             this.MaxMem.Name = "MaxMem";
             this.MaxMem.ReadOnly = true;
             this.MaxMem.Size = new System.Drawing.Size(404, 55);
@@ -127,7 +133,7 @@
             // MaxMemSpeed
             // 
             this.MaxMemSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaxMemSpeed.Location = new System.Drawing.Point(34, 518);
+            this.MaxMemSpeed.Location = new System.Drawing.Point(34, 632);
             this.MaxMemSpeed.Name = "MaxMemSpeed";
             this.MaxMemSpeed.ReadOnly = true;
             this.MaxMemSpeed.Size = new System.Drawing.Size(404, 55);
@@ -138,7 +144,7 @@
             // PCIeSlotN
             // 
             this.PCIeSlotN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PCIeSlotN.Location = new System.Drawing.Point(34, 616);
+            this.PCIeSlotN.Location = new System.Drawing.Point(34, 702);
             this.PCIeSlotN.Name = "PCIeSlotN";
             this.PCIeSlotN.ReadOnly = true;
             this.PCIeSlotN.Size = new System.Drawing.Size(404, 55);
@@ -148,7 +154,7 @@
             // MaxPCIeSlotType
             // 
             this.MaxPCIeSlotType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaxPCIeSlotType.Location = new System.Drawing.Point(34, 716);
+            this.MaxPCIeSlotType.Location = new System.Drawing.Point(34, 780);
             this.MaxPCIeSlotType.Name = "MaxPCIeSlotType";
             this.MaxPCIeSlotType.ReadOnly = true;
             this.MaxPCIeSlotType.Size = new System.Drawing.Size(404, 55);
@@ -158,7 +164,7 @@
             // PCIeVer
             // 
             this.PCIeVer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PCIeVer.Location = new System.Drawing.Point(34, 808);
+            this.PCIeVer.Location = new System.Drawing.Point(34, 854);
             this.PCIeVer.Name = "PCIeVer";
             this.PCIeVer.ReadOnly = true;
             this.PCIeVer.Size = new System.Drawing.Size(404, 55);
@@ -168,7 +174,7 @@
             // mainMenu
             // 
             this.mainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMenu.Location = new System.Drawing.Point(157, 908);
+            this.mainMenu.Location = new System.Drawing.Point(157, 920);
             this.mainMenu.Name = "mainMenu";
             this.mainMenu.Size = new System.Drawing.Size(281, 62);
             this.mainMenu.TabIndex = 13;
@@ -179,90 +185,81 @@
             // FormFactorEntry
             // 
             this.FormFactorEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormFactorEntry.Location = new System.Drawing.Point(525, 30);
+            this.FormFactorEntry.Location = new System.Drawing.Point(525, 240);
             this.FormFactorEntry.Name = "FormFactorEntry";
             this.FormFactorEntry.Size = new System.Drawing.Size(340, 55);
             this.FormFactorEntry.TabIndex = 14;
-            this.FormFactorEntry.Text = "Enter Text";
             this.FormFactorEntry.TextChanged += new System.EventHandler(this.textBox1_TextChanged_3);
             // 
             // SocketEntry
             // 
             this.SocketEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SocketEntry.Location = new System.Drawing.Point(525, 122);
+            this.SocketEntry.Location = new System.Drawing.Point(525, 316);
             this.SocketEntry.Name = "SocketEntry";
             this.SocketEntry.Size = new System.Drawing.Size(340, 55);
             this.SocketEntry.TabIndex = 15;
-            this.SocketEntry.Text = "Enter Text";
             // 
             // ChipsetEntry
             // 
             this.ChipsetEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChipsetEntry.Location = new System.Drawing.Point(525, 218);
+            this.ChipsetEntry.Location = new System.Drawing.Point(525, 396);
             this.ChipsetEntry.Name = "ChipsetEntry";
             this.ChipsetEntry.Size = new System.Drawing.Size(340, 55);
             this.ChipsetEntry.TabIndex = 16;
-            this.ChipsetEntry.Text = "Enter Text";
             // 
             // MemTypeEntry
             // 
             this.MemTypeEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MemTypeEntry.Location = new System.Drawing.Point(525, 318);
+            this.MemTypeEntry.Location = new System.Drawing.Point(525, 474);
             this.MemTypeEntry.Name = "MemTypeEntry";
             this.MemTypeEntry.Size = new System.Drawing.Size(340, 55);
             this.MemTypeEntry.TabIndex = 17;
-            this.MemTypeEntry.Text = "Enter Text";
             this.MemTypeEntry.TextChanged += new System.EventHandler(this.textBox1_TextChanged_4);
             // 
             // MaxMemEntry
             // 
             this.MaxMemEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaxMemEntry.Location = new System.Drawing.Point(525, 420);
+            this.MaxMemEntry.Location = new System.Drawing.Point(525, 554);
             this.MaxMemEntry.Name = "MaxMemEntry";
             this.MaxMemEntry.Size = new System.Drawing.Size(340, 55);
             this.MaxMemEntry.TabIndex = 18;
-            this.MaxMemEntry.Text = "Enter Text";
             // 
             // maxMemSpeedEntry
             // 
             this.maxMemSpeedEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxMemSpeedEntry.Location = new System.Drawing.Point(525, 518);
+            this.maxMemSpeedEntry.Location = new System.Drawing.Point(525, 632);
             this.maxMemSpeedEntry.Name = "maxMemSpeedEntry";
             this.maxMemSpeedEntry.Size = new System.Drawing.Size(340, 55);
             this.maxMemSpeedEntry.TabIndex = 19;
-            this.maxMemSpeedEntry.Text = "Enter Text";
             // 
             // PcieSlotNEntry
             // 
             this.PcieSlotNEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PcieSlotNEntry.Location = new System.Drawing.Point(525, 616);
+            this.PcieSlotNEntry.Location = new System.Drawing.Point(525, 702);
             this.PcieSlotNEntry.Name = "PcieSlotNEntry";
             this.PcieSlotNEntry.Size = new System.Drawing.Size(340, 55);
             this.PcieSlotNEntry.TabIndex = 20;
-            this.PcieSlotNEntry.Text = "Enter Text";
             // 
             // maxPCIeSlotTypeEntry
             // 
             this.maxPCIeSlotTypeEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxPCIeSlotTypeEntry.Location = new System.Drawing.Point(525, 716);
+            this.maxPCIeSlotTypeEntry.Location = new System.Drawing.Point(525, 780);
             this.maxPCIeSlotTypeEntry.Name = "maxPCIeSlotTypeEntry";
             this.maxPCIeSlotTypeEntry.Size = new System.Drawing.Size(340, 55);
             this.maxPCIeSlotTypeEntry.TabIndex = 21;
-            this.maxPCIeSlotTypeEntry.Text = "Enter Text";
             // 
             // PCIeVersionEntry
             // 
             this.PCIeVersionEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PCIeVersionEntry.Location = new System.Drawing.Point(525, 808);
+            this.PCIeVersionEntry.Location = new System.Drawing.Point(525, 854);
             this.PCIeVersionEntry.Name = "PCIeVersionEntry";
             this.PCIeVersionEntry.Size = new System.Drawing.Size(340, 55);
             this.PCIeVersionEntry.TabIndex = 22;
-            this.PCIeVersionEntry.Text = "Enter Text";
             // 
             // submit
             // 
             this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submit.Location = new System.Drawing.Point(525, 908);
+            this.submit.Location = new System.Drawing.Point(525, 920);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(281, 62);
             this.submit.TabIndex = 23;
@@ -270,12 +267,72 @@
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.Submit);
             // 
+            // pfScoreEntry
+            // 
+            this.pfScoreEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfScoreEntry.Location = new System.Drawing.Point(525, 170);
+            this.pfScoreEntry.Name = "pfScoreEntry";
+            this.pfScoreEntry.Size = new System.Drawing.Size(340, 55);
+            this.pfScoreEntry.TabIndex = 49;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(34, 170);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(404, 55);
+            this.textBox2.TabIndex = 48;
+            this.textBox2.Text = "Enter PF Score";
+            // 
+            // MoboManufacturerEntry
+            // 
+            this.MoboManufacturerEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoboManufacturerEntry.Location = new System.Drawing.Point(525, 98);
+            this.MoboManufacturerEntry.Name = "MoboManufacturerEntry";
+            this.MoboManufacturerEntry.Size = new System.Drawing.Size(340, 55);
+            this.MoboManufacturerEntry.TabIndex = 47;
+            // 
+            // Manufacturer
+            // 
+            this.Manufacturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Manufacturer.Location = new System.Drawing.Point(34, 98);
+            this.Manufacturer.Name = "Manufacturer";
+            this.Manufacturer.ReadOnly = true;
+            this.Manufacturer.Size = new System.Drawing.Size(404, 55);
+            this.Manufacturer.TabIndex = 46;
+            this.Manufacturer.Text = "Enter Manufacturer:";
+            // 
+            // moboNameEntry
+            // 
+            this.moboNameEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moboNameEntry.Location = new System.Drawing.Point(525, 24);
+            this.moboNameEntry.Name = "moboNameEntry";
+            this.moboNameEntry.Size = new System.Drawing.Size(340, 55);
+            this.moboNameEntry.TabIndex = 45;
+            // 
+            // moboName
+            // 
+            this.moboName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moboName.Location = new System.Drawing.Point(34, 24);
+            this.moboName.Name = "moboName";
+            this.moboName.ReadOnly = true;
+            this.moboName.Size = new System.Drawing.Size(404, 55);
+            this.moboName.TabIndex = 44;
+            this.moboName.Text = "Enter Name:";
+            // 
             // AddMotherboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(912, 1004);
+            this.Controls.Add(this.pfScoreEntry);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.MoboManufacturerEntry);
+            this.Controls.Add(this.Manufacturer);
+            this.Controls.Add(this.moboNameEntry);
+            this.Controls.Add(this.moboName);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.PCIeVersionEntry);
             this.Controls.Add(this.maxPCIeSlotTypeEntry);
@@ -328,5 +385,11 @@
         private System.Windows.Forms.TextBox maxPCIeSlotTypeEntry;
         private System.Windows.Forms.TextBox PCIeVersionEntry;
         private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.TextBox pfScoreEntry;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox MoboManufacturerEntry;
+        private System.Windows.Forms.TextBox Manufacturer;
+        private System.Windows.Forms.TextBox moboNameEntry;
+        private System.Windows.Forms.TextBox moboName;
     }
 }

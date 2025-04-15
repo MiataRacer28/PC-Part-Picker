@@ -48,7 +48,7 @@
             this.gfxAPIEntry = new System.Windows.Forms.TextBox();
             this.mainMenu = new System.Windows.Forms.Button();
             this.submit = new System.Windows.Forms.Button();
-            this.Name = new System.Windows.Forms.TextBox();
+            this.gpuName = new System.Windows.Forms.TextBox();
             this.gpuNameEntry = new System.Windows.Forms.TextBox();
             this.gpuManufacturerEntry = new System.Windows.Forms.TextBox();
             this.Manufacturer = new System.Windows.Forms.TextBox();
@@ -250,15 +250,15 @@
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
-            // Name
+            // gpuName
             // 
-            this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(24, 35);
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            this.Name.Size = new System.Drawing.Size(404, 55);
-            this.Name.TabIndex = 38;
-            this.Name.Text = "Enter GPU Name";
+            this.gpuName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpuName.Location = new System.Drawing.Point(24, 35);
+            this.gpuName.Name = "gpuName";
+            this.gpuName.ReadOnly = true;
+            this.gpuName.Size = new System.Drawing.Size(404, 55);
+            this.gpuName.TabIndex = 38;
+            this.gpuName.Text = "Enter GPU Name:";
             // 
             // gpuNameEntry
             // 
@@ -318,7 +318,7 @@
             this.Controls.Add(this.gpuManufacturerEntry);
             this.Controls.Add(this.Manufacturer);
             this.Controls.Add(this.gpuNameEntry);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.gpuName);
             this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.gfxAPIEntry);
@@ -339,7 +339,7 @@
             this.Controls.Add(this.maxClock);
             this.Controls.Add(this.baseClock);
             this.Controls.Add(this.CoreCount);
-            this.Name.Text = "Enter GPU Name:";
+            this.Name = "AddGPU";
             this.Text = "Add GPU";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -368,7 +368,7 @@
         private System.Windows.Forms.TextBox gfxAPIEntry;
         private System.Windows.Forms.Button mainMenu;
         private System.Windows.Forms.Button submit;
-        private System.Windows.Forms.TextBox Name;
+        private System.Windows.Forms.TextBox gpuName;
         private System.Windows.Forms.TextBox gpuNameEntry;
         private System.Windows.Forms.TextBox gpuManufacturerEntry;
         private System.Windows.Forms.TextBox Manufacturer;

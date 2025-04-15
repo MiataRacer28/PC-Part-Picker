@@ -61,6 +61,37 @@ namespace PCPartPicker.Forms
 
         private void Submit(object sender, EventArgs e)
         {
+            try
+            {
+                string name = (string)(moboNameEntry.Text);
+                string manufacturer = (string)(MoboManufacturerEntry.Text);
+                int performanceScore = int.Parse(pfScoreEntry.Text);
+                string formFactor = (string)(FormFactorEntry.Text);
+                string socket = (string)(SocketEntry.Text);
+                string chipset = (string)(ChipsetEntry.Text);
+                string memType = (string)(MemTypeEntry.Text);
+                int maxMem = int.Parse(MaxMemEntry.Text);
+                int maxMemSpeed = int.Parse(maxMemSpeedEntry.Text);
+                int pcieSlotNum = int.Parse(PcieSlotNEntry.Text);
+                string maxPCIeSlotType = (string)(maxPCIeSlotTypeEntry.Text);
+                string PCIeVer = (string)(PCIeVersionEntry.Text);
+
+                Motherboard moboAddition = new Motherboard(name, manufacturer, performanceScore, formFactor, socket, chipset, memType, maxMem, maxMemSpeed, pcieSlotNum, maxPCIeSlotType, PCIeVer);
+                Database.UpdateDatabase(moboAddition);
+
+                MainMenu mainMenu = new MainMenu(); //Main menu form
+                mainMenu.Show(); //show main menu
+                this.Hide(); //hide database screen
+            }
+
+            catch (Exception ex)
+            {
+                ErrorScreen errorScreen = new ErrorScreen();
+                errorScreen.ShowErrorMessage(ex.Message);
+                this.Hide();
+                errorScreen.Show();
+            }
+
 
         }
     }
