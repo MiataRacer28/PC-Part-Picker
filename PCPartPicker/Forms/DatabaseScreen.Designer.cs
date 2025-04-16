@@ -53,6 +53,7 @@
             this.removePart.TabIndex = 1;
             this.removePart.Text = "Remove Part";
             this.removePart.UseVisualStyleBackColor = true;
+            this.removePart.Click += new System.EventHandler(this.removePart_Click);
             // 
             // mainMenuReturn
             // 

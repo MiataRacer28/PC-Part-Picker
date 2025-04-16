@@ -142,6 +142,32 @@ public class Database
         }
     }
 
+    public static void DeletePart(string componentName)
+    {
+        for (int i = 0; i < PartsList.Count; i++) //Iterate through list and remove name match
+        { 
+            if (componentName == PartsList[i].Name)
+            {
+                PartsList.RemoveAt(i);
+                i--; //Not really required but could be usefull if there is a duplicate part listed
+            }
+        }
+
+        string filePath = Path.Combine(PathToFiles, "components.txt");
+
+        if (File.Exists(filePath)) //Write the contents of the updated parts list to the database file (Will overwrite contents)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath, false))
+            {
+                foreach (var part in PartsList)
+                {
+                    writer.WriteLine(string.Join(",", part.ToStringArray()));
+                }
+            }
+        }
+
+    }
+
 
 
 

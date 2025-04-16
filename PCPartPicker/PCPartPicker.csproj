@@ -113,6 +113,12 @@
     <Compile Include="Models\GPU.cs" />
     <Compile Include="Models\Motherboard.cs" />
     <Compile Include="Models\RAM.cs" />
+    <Compile Include="Models\RemovePart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\RemovePart.Designer.cs">
+      <DependentUpon>RemovePart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AddCPU.resx">
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PCBuildScreen.resx">
       <DependentUpon>PCBuildScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\RemovePart.resx">
+      <DependentUpon>RemovePart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

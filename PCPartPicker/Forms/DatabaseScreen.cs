@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PCPartPicker.Forms;
+using PCPartPicker.Models;
 
 namespace PCPartPicker
 {
@@ -34,6 +36,13 @@ namespace PCPartPicker
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
             this.Hide(); //hide database screen
+        }
+
+        private void removePart_Click(object sender, EventArgs e)
+        {
+            RemovePart removePart = new RemovePart();
+            this.Hide();
+            removePart.Show();
         }
     }
 }
