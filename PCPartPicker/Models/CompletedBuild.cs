@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 /// <summary>
 /// Refers to selected parts forming a PC created by a user
@@ -165,6 +166,19 @@ public class CompletedBuild
 
         return MoboSummary;
     } //Ram Summary
+
+    public string[] ToStringArray()
+    {
+        return new string[]
+            {
+            "BUILD"
+            }
+            .Concat(this.Cpu.ToStringArray())
+            .Concat(this.Gpu.ToStringArray())
+            .Concat(this.Mobo.ToStringArray())
+            .Concat(this.Ram.ToStringArray())
+            .ToArray();
+    }
 
 
 

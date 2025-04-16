@@ -47,4 +47,11 @@ public class CPU : Component
 
 		};
 	}
+
+    public override string ToString()
+    {
+        return $"{Name} ({Manufacturer}, {CoreCount} Core)";
+    }
+
+
 }

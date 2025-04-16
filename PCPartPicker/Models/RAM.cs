@@ -40,4 +40,9 @@ public class RAM : Component
             this.ErrorCorrecting.ToString(),
     };
     }
+
+    public override string ToString()
+    {
+        return $"{Name} ({Manufacturer}, {Capacity} GB)";
+    }
 }

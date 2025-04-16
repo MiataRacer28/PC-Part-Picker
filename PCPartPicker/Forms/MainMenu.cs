@@ -16,6 +16,7 @@ namespace PCPartPicker
         {
             InitializeComponent();
             Database.LoadDatabase();
+            Database.LoadCompletedBuildsDatabase();
         }
 
         private void PartsDatabase_Click(object sender, EventArgs e)

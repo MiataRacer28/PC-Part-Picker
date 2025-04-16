@@ -53,4 +53,9 @@ public class GPU : Component
             this.RecentGraphicsAPI
         };
     }
+
+    public override string ToString()
+    {
+        return $"{Name} ({Manufacturer}, {VRAM}GB VRAM)";
+    }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
 using System.IO;
+using System.Linq.Expressions;
+using PCPartPicker.Forms;
 
 /// <summary>
 /// Database class
@@ -11,31 +13,89 @@ public class Database
 {
     public static List<Component> PartsList;
     private static string PathToFiles;
+    public static List<CompletedBuild> CompletedBuildsList;
 
 
     public static void LoadDatabase()
     {
-
-        PathToFiles = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "PC-Part-Picker"); //Store in documents/PC-Part-Picker
-
-        if (!Directory.Exists(PathToFiles)) //Directory created if non-existing path is present
+        try
         {
-            Directory.CreateDirectory(PathToFiles);
+            PathToFiles = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "PC-Part-Picker"); //Store in documents/PC-Part-Picker
+
+            if (!Directory.Exists(PathToFiles)) //Directory created if non-existing path is present
+            {
+                Directory.CreateDirectory(PathToFiles);
+            }
+
+
+            if (PartsList == null)
+            {
+                PartsList = new List<Component>();
+            }
+
+            ReadParts(); //Method will read files from database text file and add them to the database
         }
-
-
-        if (PartsList == null)
-        {
-            PartsList = new List<Component>();
+        catch(Exception e){
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
+            errorScreen.Show();
         }
-
-        ReadParts(); //Method will read files from database text file and add them to the database
     }
 
-    public static void UpdateDatabase(Component PartToAdd)
+    public static void LoadCompletedBuildsDatabase()
     {
-        PartsList.Add(PartToAdd);
-        WriteToDatabase(PartToAdd); //Write parts to the database file
+        try
+        {
+            PathToFiles = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "PC-Part-Picker"); //Store in documents/PC-Part-Picker
+
+            if (!Directory.Exists(PathToFiles)) //Directory created if non-existing path is present
+            {
+                Directory.CreateDirectory(PathToFiles);
+            }
+
+
+            if (CompletedBuildsList == null)
+            {
+                CompletedBuildsList = new List<CompletedBuild>();
+            }
+
+            ReadBuilds(); //Method will read builds from database text file and add them to the database
+        }
+
+        catch (Exception e)
+        {
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
+            errorScreen.Show();
+        }
+    }
+
+    public static void UpdateDatabase(Component PartToAdd) //Add part to database
+    {
+        try
+        {
+            PartsList.Add(PartToAdd);
+            WriteToDatabase(PartToAdd); //Write parts to the database file
+        }
+        catch (Exception e)
+        {
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
+        }
+    }
+
+    public static void UpdateCompletedBuildsDatabase(CompletedBuild build) //add completed build to list
+    {
+        try
+        {
+            CompletedBuildsList.Add(build);
+            WriteBuildToDatabase(build);
+        }
+        catch (Exception e)
+        {
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
+        }
     }
 
     public static void ReadParts()
@@ -124,7 +184,100 @@ public class Database
         }
         catch (Exception e)
         {
-            Console.WriteLine("An error has occured reading the database");
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
+        }
+    }
+
+    public static void ReadBuilds()
+    {
+        CompletedBuildsList.Clear();
+        try
+        {
+            CPU loadedCPU = null;
+            GPU loadedGPU = null;
+            RAM loadedRam = null;
+            Motherboard loadedMotherboard = null;
+            int componentCount = 0;
+
+            string filePath = Path.Combine(PathToFiles, "completed_builds.txt"); //Combine method will handle OS specific file structure syntax
+
+            if (!File.Exists(filePath)) //if file doesnt exist, create it
+            {
+
+            }
+
+
+            string[] lines = File.ReadAllLines(filePath);
+
+            // Process each line
+            foreach (var line in lines)
+            {
+                if (string.IsNullOrWhiteSpace(line)) continue;  // Skip empty lines
+
+                // Split the line by commas
+                string[] parts = line.Split(',');
+
+                // Trim spaces and remove quotes
+                for (int i = 0; i < parts.Length; i++)
+                {
+                    parts[i] = parts[i].Trim();
+                    if (parts[i].StartsWith("\"") && parts[i].EndsWith("\""))
+                    {
+                        parts[i] = parts[i].Substring(1, parts[i].Length - 2);  // Remove quotes
+                    }
+                }
+
+                // Handle the creation of different components based on the first part of the line
+                string componentType = parts[0];  // The type of component (CPU, GPU, etc.)
+
+                switch (componentType)
+                {
+                    case "CPU":
+                        loadedCPU = CreateCPU(parts);
+                        componentCount++;
+                        break;
+
+                    case "GPU":
+                        loadedGPU = CreateGPU(parts);
+                        componentCount++;
+                        break;
+
+                    case "RAM":
+                        loadedRam = CreateRAM(parts);
+                        componentCount++;
+                        break;
+
+                    case "Motherboard":
+                        loadedMotherboard = CreateMotherboard(parts);
+                        componentCount++;
+                        break;
+
+                    default:
+                        Console.WriteLine("An error has occured reading the database");
+                        break;
+                }
+
+                if (componentCount == 4)
+                {
+                    CompletedBuild newBuild = new CompletedBuild(loadedCPU, loadedGPU, loadedRam, loadedMotherboard);
+                    CompletedBuildsList.Add(newBuild);
+
+                    // Reset variables for next build
+                    loadedCPU = null;
+                    loadedGPU = null;
+                    loadedRam = null;
+                    loadedMotherboard = null;
+                    componentCount = 0; // Reset counter
+                }
+            }
+
+            Console.WriteLine("Completed builds loaded successfully.");
+        }
+        catch (Exception e)
+        {
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
         }
     }
 
@@ -136,34 +289,77 @@ public class Database
             string lineToAdd = string.Join(",", PartToAdd.ToStringArray());
             File.AppendAllText(filePath, lineToAdd + Environment.NewLine);
         }
-        catch(Exception E)
+        catch(Exception e)
         {
-            Console.WriteLine("Database write failure!");
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
+            errorScreen.Show();
+        }
+    } //Helper
+
+    public static void WriteBuildToDatabase(CompletedBuild build) //Helper
+    {
+        try
+        {
+            string filePath = Path.Combine(PathToFiles, "completed_builds.txt");
+
+            // Ensure directory exists
+            if (!Directory.Exists(PathToFiles))
+            {
+                Directory.CreateDirectory(PathToFiles);
+            }
+
+            // Convert the build into a formatted string
+            string buildData =
+                string.Join(",", build.Cpu.ToStringArray()) + "\n" +
+                string.Join(",", build.Gpu.ToStringArray()) + "\n" +
+                string.Join(",", build.Mobo.ToStringArray()) + "\n" +
+                string.Join(",", build.Ram.ToStringArray()) + "\n";
+
+
+
+            // Append the new build entry to the file
+            File.AppendAllText(filePath, buildData + Environment.NewLine);
+            Console.WriteLine("Build successfully saved to database.");
+        }
+        catch (Exception e)
+        {
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
+            errorScreen.Show();
         }
     }
 
     public static void DeletePart(string componentName)
     {
-        for (int i = 0; i < PartsList.Count; i++) //Iterate through list and remove name match
-        { 
-            if (componentName == PartsList[i].Name)
-            {
-                PartsList.RemoveAt(i);
-                i--; //Not really required but could be usefull if there is a duplicate part listed
-            }
-        }
-
-        string filePath = Path.Combine(PathToFiles, "components.txt");
-
-        if (File.Exists(filePath)) //Write the contents of the updated parts list to the database file (Will overwrite contents)
+        try
         {
-            using (StreamWriter writer = new StreamWriter(filePath, false))
+            for (int i = 0; i < PartsList.Count; i++) //Iterate through list and remove name match
             {
-                foreach (var part in PartsList)
+                if (componentName == PartsList[i].Name)
                 {
-                    writer.WriteLine(string.Join(",", part.ToStringArray()));
+                    PartsList.RemoveAt(i);
+                    i--; //Not really required but could be usefull if there is a duplicate part listed
                 }
             }
+
+            string filePath = Path.Combine(PathToFiles, "components.txt");
+
+            if (File.Exists(filePath)) //Write the contents of the updated parts list to the database file (Will overwrite contents)
+            {
+                using (StreamWriter writer = new StreamWriter(filePath, false))
+                {
+                    foreach (var part in PartsList)
+                    {
+                        writer.WriteLine(string.Join(",", part.ToStringArray()));
+                    }
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            ErrorScreen errorScreen = new ErrorScreen();
+            errorScreen.ShowErrorMessage(e.Message);
         }
 
     }
@@ -241,5 +437,7 @@ public class Database
 
         return new Motherboard(name, manufacturer, performanceScore, formFactor, socket, chipset, memoryType, maximumMemory, maximumMemorySpeed, numberOfPCIeSlots, maxPCIeSlotType, pcieVer);
     }
+
+
 
 }

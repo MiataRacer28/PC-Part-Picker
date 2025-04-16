@@ -52,4 +52,9 @@ public class Motherboard : Component
 			this.PCIeVer
     };
     }
+
+    public override string ToString()
+    {
+        return $"{Name} ({Manufacturer}, {FormFactor} Form Factor)";
+    }
 }
