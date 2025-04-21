@@ -90,11 +90,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(856, 954);
+            this.ClientSize = new System.Drawing.Size(798, 1021);
             this.Controls.Add(this.ViewCompletedBuilds);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.BuildPC);
             this.Controls.Add(this.PartsDatabase);
+            this.MaximumSize = new System.Drawing.Size(826, 1100);
+            this.MinimumSize = new System.Drawing.Size(826, 1100);
             this.Name = "MainMenu";
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainMenu_Load);

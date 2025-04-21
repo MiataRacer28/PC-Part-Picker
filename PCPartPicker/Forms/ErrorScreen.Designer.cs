@@ -57,7 +57,8 @@
             this.SpecifiedError.Location = new System.Drawing.Point(65, 279);
             this.SpecifiedError.MinimumSize = new System.Drawing.Size(658, 300);
             this.SpecifiedError.Name = "SpecifiedError";
-            this.SpecifiedError.Size = new System.Drawing.Size(658, 300);
+            this.SpecifiedError.ReadOnly = true;
+            this.SpecifiedError.Size = new System.Drawing.Size(658, 35);
             this.SpecifiedError.TabIndex = 2;
             this.SpecifiedError.TextChanged += new System.EventHandler(this.SpecifiedError_TextChanged);
             // 

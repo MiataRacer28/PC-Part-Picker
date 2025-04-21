@@ -149,12 +149,26 @@ namespace PCPartPicker
 
         private void CreateBuild_Click(object sender, EventArgs e)
         {
-            CompletedBuild newBuild = new CompletedBuild(SelectedCPU, SelectedGPU, SelectedRAM, SelectedMobo);
-            Database.WriteBuildToDatabase(newBuild);
-            MainMenu mainMenu = new MainMenu(); //Main menu form
-            mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            try
+            {
 
+                if (SelectedCPU.Socket != SelectedMobo.Socket)
+                {
+                    throw new InvalidSocketError();
+                }
+                CompletedBuild newBuild = new CompletedBuild(SelectedCPU, SelectedGPU, SelectedRAM, SelectedMobo);
+                Database.WriteBuildToDatabase(newBuild);
+                MainMenu mainMenu = new MainMenu(); //Main menu form
+                mainMenu.Show(); //show main menu
+                this.Hide(); //hide database screen
+            }
+            catch (Exception ex)
+            {
+                ErrorScreen errorScreen = new ErrorScreen();
+                errorScreen.ShowErrorMessage(ex.Message);
+                this.Hide();
+                errorScreen.Show();
+            }
         }
     }
 }

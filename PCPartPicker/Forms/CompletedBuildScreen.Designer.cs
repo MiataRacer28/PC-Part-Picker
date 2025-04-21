@@ -30,6 +30,8 @@
         {
             this.completedBuildScreenMainTitle = new System.Windows.Forms.TextBox();
             this.mainMenu = new System.Windows.Forms.Button();
+            this.CompletedBuildsGrid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedBuildsGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // completedBuildScreenMainTitle
@@ -55,16 +57,30 @@
             this.mainMenu.UseVisualStyleBackColor = true;
             this.mainMenu.Click += new System.EventHandler(this.mainMenu_Click);
             // 
+            // CompletedBuildsGrid
+            // 
+            this.CompletedBuildsGrid.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CompletedBuildsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CompletedBuildsGrid.Location = new System.Drawing.Point(120, 201);
+            this.CompletedBuildsGrid.Name = "CompletedBuildsGrid";
+            this.CompletedBuildsGrid.RowHeadersWidth = 92;
+            this.CompletedBuildsGrid.RowTemplate.Height = 37;
+            this.CompletedBuildsGrid.Size = new System.Drawing.Size(937, 572);
+            this.CompletedBuildsGrid.TabIndex = 2;
+            this.CompletedBuildsGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CompletedBuildsGrid_CellContentClick);
+            // 
             // CompletedBuildScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1136, 888);
+            this.Controls.Add(this.CompletedBuildsGrid);
             this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.completedBuildScreenMainTitle);
             this.Name = "CompletedBuildScreen";
             this.Text = "CompletedBuildScreen";
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedBuildsGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,5 +90,6 @@
 
         private System.Windows.Forms.TextBox completedBuildScreenMainTitle;
         private System.Windows.Forms.Button mainMenu;
+        private System.Windows.Forms.DataGridView CompletedBuildsGrid;
     }
 }

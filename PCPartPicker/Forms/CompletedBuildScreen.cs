@@ -15,6 +15,7 @@ namespace PCPartPicker
         public CompletedBuildScreen()
         {
             InitializeComponent();
+            PopulateGridView();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -27,6 +28,30 @@ namespace PCPartPicker
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
             this.Hide(); //hide database screen
+        }
+
+        private void PopulateGridView()
+        {
+            CompletedBuildsGrid.Rows.Clear();
+
+            CompletedBuildsGrid.Columns.Add("CPU", "CPU");
+            CompletedBuildsGrid.Columns.Add("GPU", "GPU");
+            CompletedBuildsGrid.Columns.Add("RAM", "RAM");
+            CompletedBuildsGrid.Columns.Add("Motherboard", "Motherboard");
+
+
+
+
+            foreach (var build in Database.CompletedBuildsList)
+            {
+                CompletedBuildsGrid.Rows.Add(build.Cpu.Name, build.Gpu.Name, build.Ram.Capacity, build.Mobo.Name);
+            }
+
+        }
+
+        private void CompletedBuildsGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

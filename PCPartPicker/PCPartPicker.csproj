@@ -88,6 +88,7 @@
     <Compile Include="Forms\ErrorScreen.Designer.cs">
       <DependentUpon>ErrorScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\InvalidSocketError.cs" />
     <Compile Include="Forms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
