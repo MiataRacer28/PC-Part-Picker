@@ -32,8 +32,10 @@ namespace PCPartPicker
 
         private void PopulateGridView()
         {
-            CompletedBuildsGrid.Rows.Clear();
+            CompletedBuildsGrid.Rows.Clear(); //Clear residual data from grid
 
+
+            //Add columns for each component type
             CompletedBuildsGrid.Columns.Add("CPU", "CPU");
             CompletedBuildsGrid.Columns.Add("GPU", "GPU");
             CompletedBuildsGrid.Columns.Add("RAM", "RAM");
@@ -42,6 +44,7 @@ namespace PCPartPicker
 
 
 
+            //Iterate through database list of builds and add info from each to grid
             foreach (var build in Database.CompletedBuildsList)
             {
                 CompletedBuildsGrid.Rows.Add(build.Cpu.Name, build.Gpu.Name, build.Ram.Capacity, build.Mobo.Name);

@@ -45,9 +45,9 @@ namespace PCPartPicker
 
         private void CompletedBuilds_Click(object sender, EventArgs e) //View Completed Builds Screen
         {
-            CompletedBuildScreen completedBuildScreen = new CompletedBuildScreen();
-            completedBuildScreen.Show();
-            this.Hide();
+            CompletedBuildScreen completedBuildScreen = new CompletedBuildScreen(); //Completed builds form
+            completedBuildScreen.Show(); //show form
+            this.Hide(); //hide current
         }
     }
 }

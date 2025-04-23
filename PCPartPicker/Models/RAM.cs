@@ -3,7 +3,7 @@
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-public class RAM : Component
+public class RAM : Component //Ram extending Component class
 {
 	//fields
 	public int Capacity { get; set; }
@@ -24,7 +24,7 @@ public class RAM : Component
 
 	}
 
-    public override string[] ToStringArray()
+    public override string[] ToStringArray() //Change behavior of the toStringArray to allow for easier file writing
     {
         return new string[]
         {
@@ -41,7 +41,7 @@ public class RAM : Component
     };
     }
 
-    public override string ToString()
+    public override string ToString() //Change ToString behavior to list name, manufacturer, and capacity
     {
         return $"{Name} ({Manufacturer}, {Capacity} GB)";
     }

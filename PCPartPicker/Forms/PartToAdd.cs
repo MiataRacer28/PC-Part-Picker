@@ -23,39 +23,44 @@ namespace PCPartPicker
 
         }
 
+        //User opts to add CPU
         private void addCPU_Click(object sender, EventArgs e)
         {
-            AddCPU addCPU = new AddCPU();
-            addCPU.Show();
-            this.Hide();
+            AddCPU addCPU = new AddCPU(); //CPU Form
+            addCPU.Show(); //display 
+            this.Hide(); //hide current
         }
 
+        //User opts to add GPU
         private void addGPU_Click(object sender, EventArgs e)
         {
-            AddGPU addGPU = new AddGPU(); 
-            addGPU.Show(); 
-            this.Hide(); 
+            AddGPU addGPU = new AddGPU(); //GPU form
+            addGPU.Show(); //display
+            this.Hide(); //hide current
         }
 
+        //User opts to add RAM
         private void addRAM_Click(object sender, EventArgs e)
         {
-            AddRAM addRAM = new AddRAM(); 
-            addRAM.Show(); 
-            this.Hide(); 
+            AddRAM addRAM = new AddRAM(); //RAM form
+            addRAM.Show(); //display ram form
+            this.Hide(); //hide current
         }
 
+        //User opts to return home
         private void mainMenu_Click(object sender, EventArgs e)
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
 
+        //User opts to add Motherboard
         private void addMobo_Click(object sender, EventArgs e)
         {
-            AddMotherboard addMotherboard = new AddMotherboard();
-            addMotherboard.Show();
-            this.Hide();
+            AddMotherboard addMotherboard = new AddMotherboard(); //Motherboard form
+            addMotherboard.Show(); //display motherboard form
+            this.Hide(); //hide current
         }
     }
 }

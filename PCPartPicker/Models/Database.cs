@@ -16,6 +16,7 @@ public class Database
     public static List<CompletedBuild> CompletedBuildsList;
 
 
+    
     public static void LoadDatabase()
     {
         try
@@ -36,9 +37,9 @@ public class Database
             ReadParts(); //Method will read files from database text file and add them to the database
         }
         catch(Exception e){
-            ErrorScreen errorScreen = new ErrorScreen();
-            errorScreen.ShowErrorMessage(e.Message);
-            errorScreen.Show();
+            ErrorScreen errorScreen = new ErrorScreen(); //Error screen form
+            errorScreen.ShowErrorMessage(e.Message); //show error message via screen
+            errorScreen.Show(); //show screen
         }
     }
 
@@ -98,6 +99,7 @@ public class Database
         }
     }
 
+    
     public static void ReadParts()
     {
         PartsList.Clear();
@@ -138,7 +140,7 @@ public class Database
                 // Split the line by commas
                 string[] parts = line.Split(',');
 
-                // Trim spaces and remove quotes
+                // Trim spaces and remove quotes (if existing)
                 for (int i = 0; i < parts.Length; i++)
                 {
                     parts[i] = parts[i].Trim();
@@ -309,7 +311,7 @@ public class Database
                 Directory.CreateDirectory(PathToFiles);
             }
 
-            // Convert the build into a formatted string
+            // Convert the build into a formatted string using custom toStringArray methods from each component of build
             string buildData =
                 string.Join(",", build.Cpu.ToStringArray()) + "\n" +
                 string.Join(",", build.Gpu.ToStringArray()) + "\n" +

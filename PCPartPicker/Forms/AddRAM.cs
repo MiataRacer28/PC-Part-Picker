@@ -26,10 +26,10 @@ namespace PCPartPicker.Forms
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
 
-        private void submit_Click(object sender, EventArgs e)
+        private void submit_Click(object sender, EventArgs e) //Will take user entered data, create a new component, add to database list and file list
         {
             try
             {
@@ -48,17 +48,28 @@ namespace PCPartPicker.Forms
 
                 MainMenu mainMenu = new MainMenu(); //Main menu form
                 mainMenu.Show(); //show main menu
-                this.Hide(); //hide database screen
+                this.Hide(); //hide current screen
             }
 
             catch (Exception ex)
             {
+                //if failure, redirect user to error screen and display error message
                 ErrorScreen errorScreen = new ErrorScreen();
                 errorScreen.ShowErrorMessage(ex.Message);
                 this.Hide();
                 errorScreen.Show();
             }
 
+
+        }
+
+        private void ramNameEntry_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ramName_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

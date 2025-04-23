@@ -53,7 +53,7 @@ namespace PCPartPicker
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
 
         private void GPUSelect_Click(object sender, EventArgs e) //GPU Select
@@ -160,7 +160,7 @@ namespace PCPartPicker
                 Database.WriteBuildToDatabase(newBuild);
                 MainMenu mainMenu = new MainMenu(); //Main menu form
                 mainMenu.Show(); //show main menu
-                this.Hide(); //hide database screen
+                this.Hide(); //hide current screen
             }
             catch (Exception ex)
             {

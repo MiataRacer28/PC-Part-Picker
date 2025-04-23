@@ -225,6 +225,7 @@
             this.ramNameEntry.Name = "ramNameEntry";
             this.ramNameEntry.Size = new System.Drawing.Size(340, 55);
             this.ramNameEntry.TabIndex = 45;
+            this.ramNameEntry.TextChanged += new System.EventHandler(this.ramNameEntry_TextChanged);
             // 
             // ramName
             // 
@@ -235,6 +236,7 @@
             this.ramName.Size = new System.Drawing.Size(404, 55);
             this.ramName.TabIndex = 44;
             this.ramName.Text = "Enter Name: ";
+            this.ramName.TextChanged += new System.EventHandler(this.ramName_TextChanged);
             // 
             // AddRAM
             // 

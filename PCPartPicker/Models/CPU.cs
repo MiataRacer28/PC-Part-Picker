@@ -30,8 +30,8 @@ public class CPU : Component
 
 	}
 
-	public override string[] ToStringArray()
-	{
+	public override string[] ToStringArray() //Change behavior of the toStringArray to allow for easier file writing
+    {
 		return new string[]
 		{
 			"CPU",
@@ -48,7 +48,7 @@ public class CPU : Component
 		};
 	}
 
-    public override string ToString()
+    public override string ToString()  //Change ToString behavior to list name, manufacturer, and core count
     {
         return $"{Name} ({Manufacturer}, {CoreCount} Core)";
     }

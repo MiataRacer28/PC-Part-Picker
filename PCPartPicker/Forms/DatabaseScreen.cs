@@ -26,9 +26,9 @@ namespace PCPartPicker
 
         private void AddPart_click(object sender, EventArgs e)
         {
-            PartToAdd partToAdd = new PartToAdd(); //Main menu form
-            partToAdd.Show(); //show main menu
-            this.Hide(); //hide database screen
+            PartToAdd partToAdd = new PartToAdd(); //Select part to add form
+            partToAdd.Show(); //display
+            this.Hide(); //hide current
         }
 
         private void MainMenuReturn_Click(object sender, EventArgs e)
@@ -40,9 +40,9 @@ namespace PCPartPicker
 
         private void removePart_Click(object sender, EventArgs e)
         {
-            RemovePart removePart = new RemovePart();
-            this.Hide();
-            removePart.Show();
+            RemovePart removePart = new RemovePart(); //Remove part form
+            this.Hide(); //hide current
+            removePart.Show(); //show remove part form
         }
     }
 }

@@ -23,19 +23,20 @@ namespace PCPartPicker.Models
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
 
         private void submit_Click(object sender, EventArgs e)
         {
             if (PartsListTotal.SelectedItem != null)
             {
+                //Will retrive name from selected component and remove it (part) from database
                 string selectedPartName = PartsListTotal.SelectedItem.ToString();
                 Database.DeletePart(selectedPartName);
-                LoadParts();
+                LoadParts(); //Reload list
             }
             else
-            {
+            { //If failure occurs, redirect user to error screen and show the error message
                 ErrorScreen errorScreen = new ErrorScreen();
                 errorScreen.ShowErrorMessage("No part selected");
                 this.Hide();
@@ -48,9 +49,9 @@ namespace PCPartPicker.Models
 
         }
 
-        private void LoadParts()
+        private void LoadParts() //Populate the list via components from the database
         {
-            PartsListTotal.Items.Clear();
+            PartsListTotal.Items.Clear(); //Clear residual parts then list all parts again 
 
             foreach (var part in Database.PartsList)
             {

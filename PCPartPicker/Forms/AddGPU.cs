@@ -21,7 +21,7 @@ namespace PCPartPicker.Forms
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
 
         private void coreCountEntry_TextChanged(object sender, EventArgs e)
@@ -69,6 +69,7 @@ namespace PCPartPicker.Forms
 
         }
 
+        //Create GPU from user content, add to database list and database file list
         private void submit_Click(object sender, EventArgs e)
         {
             try
@@ -91,7 +92,7 @@ namespace PCPartPicker.Forms
 
                 MainMenu mainMenu = new MainMenu(); //Main menu form
                 mainMenu.Show(); //show main menu
-                this.Hide(); //hide database screen
+                this.Hide(); //hide current screen
             }
 
             catch (Exception ex)

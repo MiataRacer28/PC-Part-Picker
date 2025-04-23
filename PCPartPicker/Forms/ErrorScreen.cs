@@ -24,7 +24,7 @@ namespace PCPartPicker.Forms
 
         public void ShowErrorMessage(string message)
         {
-            SpecifiedError.Text = message; 
+            SpecifiedError.Text = message; //Show error message
         }
 
         private void SpecifiedError_TextChanged(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace PCPartPicker.Forms
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
     }
 }

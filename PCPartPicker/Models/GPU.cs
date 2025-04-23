@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 /// <summary>
 /// GPU object for parts database
 /// </summary>
-public class GPU : Component
+public class GPU : Component //GPU extending component class
 {
     //Fields
     public int CoreCount {  get; set; } 
@@ -34,7 +34,7 @@ public class GPU : Component
 
     }
 
-    public override string[] ToStringArray()
+    public override string[] ToStringArray() //Change behavior of the toStringArray to allow for easier file writing
     {
         return new string[]
         {
@@ -54,7 +54,7 @@ public class GPU : Component
         };
     }
 
-    public override string ToString()
+    public override string ToString() //Change ToString behavior to list name, manufacturer, and vram
     {
         return $"{Name} ({Manufacturer}, {VRAM}GB VRAM)";
     }

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 /// <summary>
 /// Motherboard object for parts database
 /// </summary>
-public class Motherboard : Component
+public class Motherboard : Component //Motherboard extending component class 
 {
 	//Fields
 	public string FormFactor { get; set; }	
@@ -33,7 +33,7 @@ public class Motherboard : Component
 
 	}
 
-    public override string[] ToStringArray()
+    public override string[] ToStringArray() //Change behavior of the toStringArray to allow for easier file writing
     {
         return new string[]
         {
@@ -53,7 +53,7 @@ public class Motherboard : Component
     };
     }
 
-    public override string ToString()
+    public override string ToString()  //Change ToString behavior to list name, manufacturer, and form factor
     {
         return $"{Name} ({Manufacturer}, {FormFactor} Form Factor)";
     }

@@ -46,7 +46,7 @@ namespace PCPartPicker.Forms
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
 
         private void textBox1_TextChanged_3(object sender, EventArgs e)
@@ -59,8 +59,8 @@ namespace PCPartPicker.Forms
 
         }
 
-        private void Submit(object sender, EventArgs e)
-        {
+        private void Submit(object sender, EventArgs e) //Will take user entered data, create a new component, add to database list and file list
+        { 
             try
             {
                 string name = (string)(moboNameEntry.Text);
@@ -81,7 +81,7 @@ namespace PCPartPicker.Forms
 
                 MainMenu mainMenu = new MainMenu(); //Main menu form
                 mainMenu.Show(); //show main menu
-                this.Hide(); //hide database screen
+                this.Hide(); //hide current screen
             }
 
             catch (Exception ex)

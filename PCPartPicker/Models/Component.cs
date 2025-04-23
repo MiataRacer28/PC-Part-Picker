@@ -1,7 +1,7 @@
 ﻿using System;
 
 /// <summary>
-/// Summary description for class Component
+/// Will serve as a basis for future dedicated component classes
 /// </summary>
 public abstract class Component
 {
@@ -20,5 +20,6 @@ public abstract class Component
         this.PerformanceScore = performanceScore;   
 	}
 
+    //Will need to be overriden by subclasses
     public abstract string[] ToStringArray();
 }
