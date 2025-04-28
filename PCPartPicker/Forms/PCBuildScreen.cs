@@ -156,6 +156,13 @@ namespace PCPartPicker
                 {
                     throw new InvalidSocketError();
                 }
+
+                if (SelectedRAM.MemoryType != SelectedMobo.MemoryType)
+                {
+                    throw new InvalidMemoryTypeError();
+                }
+
+
                 CompletedBuild newBuild = new CompletedBuild(SelectedCPU, SelectedGPU, SelectedRAM, SelectedMobo);
                 Database.WriteBuildToDatabase(newBuild);
                 MainMenu mainMenu = new MainMenu(); //Main menu form

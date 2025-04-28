@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PCPartPicker.Models;
 
 namespace PCPartPicker
 {
@@ -60,6 +61,19 @@ namespace PCPartPicker
             string gpuName = buildRow.Cells["GPU"].Value.ToString();
             int ramCapacity = int.Parse(buildRow.Cells["RAM"].Value.ToString());
             string moboname = buildRow.Cells["Motherboard"].Value.ToString();
+
+            CompletedBuild BuildObject = Database.CompletedBuildsList.FirstOrDefault(build =>
+            build.Cpu.Name == cpuName &&
+            build.Gpu.Name == gpuName &&
+            build.Ram.Capacity == ramCapacity &&
+            build.Mobo.Name == moboname);
+
+            //Go to BuildSummary.cs sending the buildObject to form
+
+            BuildSummary buildSummaryUI = new BuildSummary(BuildObject);
+            this.Hide();
+            buildSummaryUI.Show();
+            
 
 
         }

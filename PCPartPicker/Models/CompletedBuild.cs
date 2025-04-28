@@ -71,7 +71,7 @@ public class CompletedBuild
         MoboSum = this.MoboSummary(this.Mobo);
 
         //General Summary
-        MainSum = CpuSum + "\n" + GpuSum + "\n" + RamSum + "\n" + MoboSum + "\n" + "\n" + GeneralBuild;
+        MainSum = CpuSum + " \n" + GpuSum + " \n" + RamSum + " \n" + MoboSum + " \n" + " \n" + GeneralBuild;
         return MainSum;
 
     }
@@ -96,15 +96,15 @@ public class CompletedBuild
         if (Cpu.PerformanceScore >= 7)
         {
             CpuSummary = "The " + Cpu.Name + " with a performance score greater than 7, is indicated to have " +
-                "excellent performance across a multitide of application types. It should excell in both Heavy workloads as well as gaming.";
+                "excellent performance across a multitide of application types. It should excell in both Heavy workloads as well as gaming. ";
         }
         else if (Cpu.PerformanceScore > 5 && Cpu.PerformanceScore < 7)
         {
-            CpuSummary = "The " + Cpu.Name + " with a performance score of " + this.Cpu.PerformanceScore + " is indicated to have solid performance across various computing applications. While not top of the line, the " + this.Cpu.Name + " can still be a solid choice for those on a budget";
+            CpuSummary = "The " + Cpu.Name + " with a performance score of " + this.Cpu.PerformanceScore + " is indicated to have solid performance across various computing applications. While not top of the line, the " + this.Cpu.Name + " can still be a solid choice for those on a budget. ";
         }
         else
         {
-            CpuSummary = "The " + Cpu.Name + "has a rather low performance score and will only really be capable of basic tasks such as web browsing or older gaming titles. ";
+            CpuSummary = "The " + Cpu.Name + " has a rather low performance score and will only really be capable of basic tasks such as web browsing or older gaming titles. ";
         }
 
         return CpuSummary;
@@ -115,15 +115,15 @@ public class CompletedBuild
         String GpuSummary;
         if (Gpu.PerformanceScore >= 7)
         {
-            GpuSummary = "The " + Gpu.Name + " is a real beast of a GPU, and should be suitable for almost any consumer task, and even some professional use cases such as artificial intelligence";
+            GpuSummary = "The " + Gpu.Name + " is a real beast of a GPU, and should be suitable for almost any consumer task, and even some professional use cases such as artificial intelligence. ";
         }
         else if (Gpu.PerformanceScore > 5 && Gpu.PerformanceScore < 7)
         {
-            GpuSummary = "The " + Gpu.Name + " is a solid choice for those who want get into PC gaming without breaking the bank on a multi-thousand dollar GPU.";
+            GpuSummary = "The " + Gpu.Name + " is a solid choice for those who want get into PC gaming without breaking the bank on a multi-thousand dollar GPU. ";
         }
         else
         {
-            GpuSummary = "The " + Gpu.Name + "has rather low performance and will most likely not be suitable for modern titles or workloads.";
+            GpuSummary = "The " + Gpu.Name + " has rather low performance and will most likely not be suitable for modern titles or workloads. ";
         }
 
         return GpuSummary;
@@ -134,15 +134,15 @@ public class CompletedBuild
         String RamSummary;
         if (Ram.PerformanceScore >= 7)
         {
-            RamSummary = "The " + Ram.Name + "is a suitable unit for heavy and intensive professional workloads such as VM clusters, game servers, etc";
+            RamSummary = "The " + Ram.Name + " is a suitable unit for heavy and intensive professional workloads such as VM clusters, game servers, etc. ";
         }
         else if (Ram.PerformanceScore > 5 && Ram.PerformanceScore < 7)
         {
-            RamSummary = "The " + Ram.Name + " is a solid choice for gamers and enthusiasts on a budget";
+            RamSummary = "The " + Ram.Name + " is a solid choice for gamers and enthusiasts on a budget. ";
         }
         else
         {
-            RamSummary = "The " + Ram.Name + "will most likely not be suitable for heavy use or for modern day tasks.";
+            RamSummary = "The " + Ram.Name + " will most likely not be suitable for heavy use or for modern day tasks. ";
         }
 
         return RamSummary;
@@ -153,15 +153,15 @@ public class CompletedBuild
         String MoboSummary;
         if (Mobo.PerformanceScore >= 7)
         {
-            MoboSummary = "The " + Mobo.Name + " has excellent compatibility with newer features and standards, and will be an excellent choice for those needing a basis for a rather high end system.";
+            MoboSummary = "The " + Mobo.Name + " has excellent compatibility with newer features and standards, and will be an excellent choice for those needing a basis for a rather high end system. ";
         }
         else if (Mobo.PerformanceScore > 5 && Mobo.PerformanceScore < 7)
         {
-            MoboSummary = "The " + Mobo.Name + " is a solid choice for gamers and enthusiasts";
+            MoboSummary = "The " + Mobo.Name + " is a solid choice for gamers and enthusiasts. ";
         }
         else
         {
-            MoboSummary = "The " + Mobo.Name + "will most likely not be suitable for heavy use or for modern day tasks.";
+            MoboSummary = "The " + Mobo.Name + "will most likely not be suitable for heavy use or for modern day tasks. ";
         }
 
         return MoboSummary;

@@ -42,6 +42,7 @@
             this.ErrorAlert.Location = new System.Drawing.Point(103, 103);
             this.ErrorAlert.MinimumSize = new System.Drawing.Size(586, 48);
             this.ErrorAlert.Name = "ErrorAlert";
+            this.ErrorAlert.ReadOnly = true;
             this.ErrorAlert.Size = new System.Drawing.Size(586, 48);
             this.ErrorAlert.TabIndex = 0;
             this.ErrorAlert.Text = "The Following Error has Occured!";
@@ -56,9 +57,10 @@
             // 
             this.SpecifiedError.Location = new System.Drawing.Point(65, 279);
             this.SpecifiedError.MinimumSize = new System.Drawing.Size(658, 300);
+            this.SpecifiedError.Multiline = true;
             this.SpecifiedError.Name = "SpecifiedError";
             this.SpecifiedError.ReadOnly = true;
-            this.SpecifiedError.Size = new System.Drawing.Size(658, 35);
+            this.SpecifiedError.Size = new System.Drawing.Size(658, 300);
             this.SpecifiedError.TabIndex = 2;
             this.SpecifiedError.TextChanged += new System.EventHandler(this.SpecifiedError_TextChanged);
             // 

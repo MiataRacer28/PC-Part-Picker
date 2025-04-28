@@ -94,7 +94,6 @@
     <Compile Include="Forms\ErrorScreen.Designer.cs">
       <DependentUpon>ErrorScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InvalidSocketError.cs" />
     <Compile Include="Forms\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +123,8 @@
     <Compile Include="Models\CPU.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\GPU.cs" />
+    <Compile Include="Models\InvalidMemoryTypeError.cs" />
+    <Compile Include="Models\InvalidSocketError.cs" />
     <Compile Include="Models\Motherboard.cs" />
     <Compile Include="Models\RAM.cs" />
     <Compile Include="Program.cs" />
