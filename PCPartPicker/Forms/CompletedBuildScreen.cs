@@ -52,8 +52,15 @@ namespace PCPartPicker
 
         }
 
+        //Will get build info from grid, find the matching build in the database, retrieve the object, then send object to new form
         private void CompletedBuildsGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            DataGridViewRow buildRow = CompletedBuildsGrid.Rows[e.RowIndex];
+            string cpuName = buildRow.Cells["CPU"].Value.ToString();
+            string gpuName = buildRow.Cells["GPU"].Value.ToString();
+            int ramCapacity = int.Parse(buildRow.Cells["RAM"].Value.ToString());
+            string moboname = buildRow.Cells["Motherboard"].Value.ToString();
+
 
         }
     }

@@ -18,3 +18,4 @@ C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPick
 C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPicker\obj\Debug\PCPartPicker.Forms.AddRAM.resources
 C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPicker\obj\Debug\PCPartPicker.Forms.ErrorScreen.resources
 C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPicker\obj\Debug\PCPartPicker.Models.RemovePart.resources
+C:\Users\littl\OneDrive\Documents\Visual Studio Projects\PCPartPicker\PCPartPicker\obj\Debug\PCPartPicker.Models.BuildSummary.resources

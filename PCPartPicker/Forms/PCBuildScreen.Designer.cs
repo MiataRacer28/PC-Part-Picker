@@ -138,7 +138,7 @@
             this.CreateBuild.Name = "CreateBuild";
             this.CreateBuild.Size = new System.Drawing.Size(556, 60);
             this.CreateBuild.TabIndex = 9;
-            this.CreateBuild.Text = "CreateBuild";
+            this.CreateBuild.Text = "Create Build";
             this.CreateBuild.UseVisualStyleBackColor = true;
             this.CreateBuild.Click += new System.EventHandler(this.CreateBuild_Click);
             // 

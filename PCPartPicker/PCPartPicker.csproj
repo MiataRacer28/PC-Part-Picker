@@ -70,6 +70,12 @@
     <Compile Include="Forms\AddRAM.Designer.cs">
       <DependentUpon>AddRAM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BuildSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuildSummary.Designer.cs">
+      <DependentUpon>BuildSummary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CompletedBuildScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,12 @@
     <Compile Include="Forms\PCBuildScreen.Designer.cs">
       <DependentUpon>PCBuildScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RemovePart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RemovePart.Designer.cs">
+      <DependentUpon>RemovePart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\CompletedBuild.cs" />
     <Compile Include="Models\Component.cs" />
     <Compile Include="Models\CPU.cs" />
@@ -114,12 +126,6 @@
     <Compile Include="Models\GPU.cs" />
     <Compile Include="Models\Motherboard.cs" />
     <Compile Include="Models\RAM.cs" />
-    <Compile Include="Models\RemovePart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Models\RemovePart.Designer.cs">
-      <DependentUpon>RemovePart.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AddCPU.resx">
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddRAM.resx">
       <DependentUpon>AddRAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuildSummary.resx">
+      <DependentUpon>BuildSummary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CompletedBuildScreen.resx">
       <DependentUpon>CompletedBuildScreen.cs</DependentUpon>
@@ -152,7 +161,7 @@
     <EmbeddedResource Include="Forms\PCBuildScreen.resx">
       <DependentUpon>PCBuildScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Models\RemovePart.resx">
+    <EmbeddedResource Include="Forms\RemovePart.resx">
       <DependentUpon>RemovePart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
