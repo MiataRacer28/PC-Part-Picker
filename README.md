@@ -1,0 +1,1 @@
+A project dedicated to my Object Oriented Systems class. This application will allow users to add computer components into a parts database (text file) which will additionally allow users to create completed PC builds from those components. Users will also be able to revisit their created builds at any time, and a summary will be generated for each build. 
