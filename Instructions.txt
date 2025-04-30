@@ -1,0 +1,16 @@
+Upon launch, you will be greeted with three options
+
+-Parts Database
+
+-Build PC
+
+-View Completed Builds
+
+
+The "Parts Database" will allow you to add or remove parts from the database. When opting to add a part, you will be presented with four options. A CPU, GPU, RAM, or Motherboard. Fill out the requested information accordingly and the part will be added into the database. if you opt to remove a component, you will be presented with the entire database, and you will be able to find a part to remove. 
+
+The "Build PC" option will allow you to build a PC from the components in the database. You will select from four categories (Motherboard, CPU, GPU, RAM). IMPORTANT: Please be sure to click the "select [component]" titles AFTER selecting a part from a respective list. You MUST do this for each component. After selecting all components, select the "Create Build" button to have your newly created build added to the database. (You may need to scroll to view the main menu and submit buttons).
+
+The "View Completed Builds" option will allow you to browse a grid of completed builds. Clicking on a row will bring you to a window that will provide you with more details about the build, as well as a summary detailing expected performance, included components, etc. 
+
+PLEASE NOTE: There are no included completed builds; there is, however, a couple starting components in the database that you may use to create a build. Also be advised that this program is sensitive to matching CPU / Mobo sockets, as well as Memory types between RAM and a given Mobo model. If you select incompatible sockets or memory types, you will be presented with an error screen. 
