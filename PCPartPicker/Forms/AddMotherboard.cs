@@ -59,7 +59,8 @@ namespace PCPartPicker.Forms
 
         }
 
-        private void Submit(object sender, EventArgs e) //Will take user entered data, create a new component, add to database list and file list
+        //Will retrieve data from each text box, convert to correct data type, pass data into a new object constructor, and update the database
+        private void Submit(object sender, EventArgs e) 
         { 
             try
             {
@@ -92,6 +93,11 @@ namespace PCPartPicker.Forms
                 errorScreen.Show();
             }
 
+
+        }
+
+        private void moboNameEntry_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

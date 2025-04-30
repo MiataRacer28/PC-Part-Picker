@@ -28,8 +28,8 @@ namespace PCPartPicker.Forms
             mainMenu.Show(); //show main menu
             this.Hide(); //hide current screen
         }
-
-        private void submit_Click(object sender, EventArgs e) //Will take user entered data, create a new component, add to database list and file list
+        //Will retrieve data from each text box, convert to correct data type, pass data into a new object constructor, and update the database
+        private void submit_Click(object sender, EventArgs e) 
         {
             try
             {

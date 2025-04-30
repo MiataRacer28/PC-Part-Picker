@@ -28,7 +28,7 @@ namespace PCPartPicker
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
 
         private void PopulateGridView()
@@ -69,7 +69,6 @@ namespace PCPartPicker
             build.Mobo.Name == moboname);
 
             //Go to BuildSummary.cs sending the buildObject to form
-
             BuildSummary buildSummaryUI = new BuildSummary(BuildObject);
             this.Hide();
             buildSummaryUI.Show();

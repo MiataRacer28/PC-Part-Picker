@@ -12,10 +12,10 @@ namespace PCPartPicker.Models
 {
     public partial class BuildSummary : Form
     {
-        public BuildSummary(CompletedBuild build)
+        public BuildSummary(CompletedBuild build) //Pass in a completed build
         {
             InitializeComponent();
-            initializeText(build);
+            initializeText(build); //Call the text init function
         }
 
         private void BuildSum_TextChanged(object sender, EventArgs e)
@@ -23,6 +23,7 @@ namespace PCPartPicker.Models
 
         }
 
+        //Populate text boxes with their respective data by accessing passed in build object and collecting name and misc data
         private void initializeText(CompletedBuild build)
         {
             Cpu.Text = "CPU: " + build.Cpu.Name;
@@ -48,7 +49,7 @@ namespace PCPartPicker.Models
         {
             MainMenu mainMenu = new MainMenu(); //Main menu form
             mainMenu.Show(); //show main menu
-            this.Hide(); //hide database screen
+            this.Hide(); //hide current screen
         }
     }
 }

@@ -310,6 +310,7 @@
             this.moboNameEntry.Name = "moboNameEntry";
             this.moboNameEntry.Size = new System.Drawing.Size(340, 55);
             this.moboNameEntry.TabIndex = 45;
+            this.moboNameEntry.TextChanged += new System.EventHandler(this.moboNameEntry_TextChanged);
             // 
             // moboName
             // 

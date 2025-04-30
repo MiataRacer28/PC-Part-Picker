@@ -69,7 +69,7 @@ namespace PCPartPicker.Forms
 
         }
 
-        //Create GPU from user content, add to database list and database file list
+        //Will retrieve data from each text box, convert to correct data type, pass data into a new object constructor, and update the database
         private void submit_Click(object sender, EventArgs e)
         {
             try

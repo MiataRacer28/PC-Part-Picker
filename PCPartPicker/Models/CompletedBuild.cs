@@ -96,7 +96,7 @@ public class CompletedBuild
         if (Cpu.PerformanceScore >= 7)
         {
             CpuSummary = "The " + Cpu.Name + " with a performance score greater than 7, is indicated to have " +
-                "excellent performance across a multitide of application types. It should excell in both Heavy workloads as well as gaming. ";
+                "excellent performance across a multitude of application types. It should excell in both Heavy workloads as well as gaming. ";
         }
         else if (Cpu.PerformanceScore > 5 && Cpu.PerformanceScore < 7)
         {
