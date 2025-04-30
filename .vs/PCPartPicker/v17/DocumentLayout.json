@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\addmotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|c:\\users\\littl\\onedrive\\documents\\visual studio projects\\pcpartpicker\\pcpartpicker\\forms\\addmotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\addmotherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -94,7 +94,7 @@
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\models\\component.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|c:\\users\\littl\\onedrive\\documents\\visual studio projects\\pcpartpicker\\pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -128,9 +128,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\pcpartpicker\\forms\\addcpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|solutionrelative:pcpartpicker\\forms\\addcpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C34AAD8F-CD74-4432-A2CE-AE62D688832A}|PCPartPicker\\PCPartPicker.csproj|c:\\users\\littl\\onedrive\\documents\\visual studio projects\\pcpartpicker\\pcpartpicker\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -152,8 +149,7 @@
               "RelativeToolTip": "PCPartPicker\\Models\\InvalidSocketError.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:18:02.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T18:18:02.395Z"
             },
             {
               "$type": "Document",
@@ -165,8 +161,7 @@
               "RelativeToolTip": "PCPartPicker\\Models\\InvalidMemoryTypeError.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:18:01.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T18:18:01.27Z"
             },
             {
               "$type": "Document",
@@ -178,8 +173,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\BuildSummary.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T15:27:42.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T15:27:42.019Z"
             },
             {
               "$type": "Document",
@@ -190,8 +184,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\BuildSummary.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\BuildSummary.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T15:11:34.879Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-28T15:11:34.879Z"
             },
             {
               "$type": "Document",
@@ -203,8 +196,7 @@
               "RelativeToolTip": "PCPartPicker\\Models\\RAM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T17:09:05.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T17:09:05.527Z"
             },
             {
               "$type": "Document",
@@ -215,8 +207,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\AddRAM.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\AddRAM.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T23:41:57.756Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-14T23:41:57.756Z"
             },
             {
               "$type": "Document",
@@ -228,8 +219,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\CompletedBuildScreen.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAUwEkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T18:07:43.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:07:43.669Z"
             },
             {
               "$type": "Document",
@@ -241,8 +231,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\AddRAM.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAwB8AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:48:20.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T14:48:20.798Z"
             },
             {
               "$type": "Document",
@@ -254,8 +243,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\ErrorScreen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T14:25:38.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T14:25:38.222Z"
             },
             {
               "$type": "Document",
@@ -266,8 +254,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\ErrorScreen.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\ErrorScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T14:16:40.928Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-10T14:16:40.928Z"
             },
             {
               "$type": "Document",
@@ -278,8 +265,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\PCPartPicker.csproj",
               "RelativeToolTip": "PCPartPicker\\PCPartPicker.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-02T20:22:59.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T20:22:59.64Z"
             },
             {
               "$type": "Document",
@@ -290,8 +276,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\AddGPU.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\AddGPU.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:51:19.803Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-31T17:51:19.803Z"
             },
             {
               "$type": "Document",
@@ -303,8 +288,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\AddGPU.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAA7wEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:55:32.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:55:32.548Z"
             },
             {
               "$type": "Document",
@@ -316,8 +300,7 @@
               "RelativeToolTip": "PCPartPicker\\Models\\GPU.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T18:42:21.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T18:42:21.42Z"
             },
             {
               "$type": "Document",
@@ -328,8 +311,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\PartToAdd.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\PartToAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:44:17.877Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-31T17:44:17.877Z"
             },
             {
               "$type": "Document",
@@ -341,8 +323,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\AddCPU.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:37:59.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:37:59.443Z"
             },
             {
               "$type": "Document",
@@ -353,8 +334,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\AddCPU.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\AddCPU.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:30:04.933Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-31T17:30:04.933Z"
             },
             {
               "$type": "Document",
@@ -378,8 +358,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\PartToAdd.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:55:12.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T16:55:12.469Z"
             },
             {
               "$type": "Document",
@@ -391,8 +370,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\DatabaseScreen.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAvwCQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T19:02:33.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T19:02:33.372Z"
             },
             {
               "$type": "Document",
@@ -403,8 +381,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\CompletedBuildScreen.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\CompletedBuildScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T18:06:30.012Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-26T18:06:30.012Z"
             },
             {
               "$type": "Document",
@@ -416,8 +393,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T18:58:21.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T18:58:21.446Z"
             },
             {
               "$type": "Document",
@@ -429,8 +405,7 @@
               "RelativeToolTip": "PCPartPicker\\Models\\CompletedBuild.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T18:52:12.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T18:52:12.624Z"
             },
             {
               "$type": "Document",
@@ -465,8 +440,7 @@
               "RelativeToolTip": "PCPartPicker\\Models\\Component.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T00:03:00.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T00:03:00.746Z"
             },
             {
               "$type": "Document",
@@ -477,8 +451,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\DatabaseScreen.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\DatabaseScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T19:01:09.898Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-19T19:01:09.898Z"
             },
             {
               "$type": "Document",
@@ -489,8 +462,7 @@
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\PCBuildScreen.cs [Design]",
               "RelativeToolTip": "PCPartPicker\\Forms\\PCBuildScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T14:30:14.374Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-18T14:30:14.374Z"
             },
             {
               "$type": "Document",
@@ -502,8 +474,7 @@
               "RelativeToolTip": "PCPartPicker\\Forms\\PCBuildScreen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T14:30:36.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T14:30:36.753Z"
             },
             {
               "$type": "Document",
@@ -513,7 +484,7 @@
               "RelativeDocumentMoniker": "PCPartPicker\\Forms\\AddMotherboard.cs",
               "ToolTip": "C:\\Users\\littl\\OneDrive\\Documents\\Visual Studio Projects\\PCPartPicker\\PCPartPicker\\Forms\\AddMotherboard.cs",
               "RelativeToolTip": "PCPartPicker\\Forms\\AddMotherboard.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAewEAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T17:07:51.819Z",
               "EditorCaption": ""
@@ -528,8 +499,7 @@
               "RelativeToolTip": "PCPartPicker\\Models\\Motherboard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T18:42:22.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T18:42:22.106Z"
             },
             {
               "$type": "Document",
@@ -541,8 +511,7 @@
               "RelativeToolTip": "PCPartPicker\\Models\\CPU.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T18:42:20.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T18:42:20.19Z"
             }
           ]
         }
